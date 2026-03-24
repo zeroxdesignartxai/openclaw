@@ -19,6 +19,7 @@
     "song_structure": [
       "string"
     ],
+    "suno_prompt": "string",
     "prompt": "string",
     "lyrics": "string",
     "tags": [
