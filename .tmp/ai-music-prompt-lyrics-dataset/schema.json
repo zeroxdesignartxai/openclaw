@@ -1,0 +1,28 @@
+{
+  "record_type": "music_prompt_lyric_example",
+  "fields": {
+    "id": "string",
+    "title": "string",
+    "genre": "string",
+    "subgenre": "string",
+    "mood": "string",
+    "bpm": "integer",
+    "rhythm_traits": [
+      "string"
+    ],
+    "vocal_styles": [
+      "string"
+    ],
+    "instrumentation": [
+      "string"
+    ],
+    "song_structure": [
+      "string"
+    ],
+    "prompt": "string",
+    "lyrics": "string",
+    "tags": [
+      "string"
+    ]
+  }
+}

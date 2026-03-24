@@ -1,0 +1,12 @@
+{
+  "title": "AI Music Prompt & Lyrics Dataset (Suno + Udio)",
+  "id": "mauricioasanchez/ai-music-prompt-lyrics-dataset",
+  "subtitle": "Structured prompts and lyrics for high-quality AI music generation",
+  "description": "This dataset contains structured music generation prompts and lyrics designed for use with AI music models such as Suno and Udio.\n\nIt includes genre-specific prompt templates, beat descriptions, vocal performance instructions, song structures, and fully written lyrics.\n\nThe dataset focuses on high-intensity genres such as deathcore, trap, drill, and experimental styles, with detailed attributes including tempo and rhythm patterns, vocal styles, instrumentation, song structures, emotional tone, and AI-optimized prompt formatting for consistent generation results.\n\nAll lyrics in this starter dataset are original example content created for prompt engineering, training experiments, and automated music-generation workflows.",
+  "licenses": [
+    {
+      "name": "CC0-1.0"
+    }
+  ],
+  "isPrivate": true
+}
