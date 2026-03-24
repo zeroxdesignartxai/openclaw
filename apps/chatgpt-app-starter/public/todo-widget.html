@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Todo widget</title>
+    <style>
+      :root {
+        color: #101824;
+        font-family:
+          "Segoe UI",
+          system-ui,
+          -apple-system,
+          sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+      }
+
+      body {
+        background:
+          radial-gradient(circle at top, #f7fbff, #eef4fb 52%, #e3ebf5 100%);
+        padding: 16px;
+      }
+
+      main {
+        max-width: 420px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.94);
+        border: 1px solid rgba(126, 147, 173, 0.22);
+        box-shadow: 0 18px 48px rgba(26, 49, 83, 0.12);
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 1.2rem;
+      }
+
+      p {
+        margin: 0 0 16px;
+        color: #53657d;
+        font-size: 0.93rem;
+      }
+
+      form {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 10px;
+        margin-bottom: 16px;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 11px 12px;
+        border: 1px solid #ccdae8;
+        border-radius: 12px;
+        background: #f9fbfd;
+        color: #101824;
+      }
+
+      button {
+        border: 0;
+        border-radius: 12px;
+        padding: 0 15px;
+        min-height: 42px;
+        font: inherit;
+        font-weight: 600;
+        cursor: pointer;
+        color: #ffffff;
+        background: linear-gradient(135deg, #2558d8, #123a96);
+      }
+
+      button:disabled,
+      input:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 10px;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 14px;
+        border-radius: 14px;
+        background: #f5f8fc;
+        border: 1px solid #dde6ef;
+      }
+
+      li[data-completed="true"] {
+        opacity: 0.72;
+      }
+
+      li[data-completed="true"] .title {
+        text-decoration: line-through;
+      }
+
+      li[data-busy="true"] {
+        opacity: 0.65;
+      }
+
+      .title {
+        flex: 1;
+      }
+
+      .empty {
+        padding: 14px;
+        border-radius: 14px;
+        background: #f5f8fc;
+        border: 1px dashed #ccdae8;
+        color: #53657d;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Todo starter</h1>
+      <p>Model results render here, and the widget can call tools over the MCP Apps bridge.</p>
+
+      <form id="add-form" autocomplete="off">
+        <input id="todo-input" type="text" name="title" placeholder="Add a task" />
+        <button id="add-button" type="submit">Add</button>
+      </form>
+
+      <ul id="todo-list"></ul>
+    </main>
+
+    <script type="module">
+      const listEl = document.getElementById("todo-list");
+      const formEl = document.getElementById("add-form");
+      const inputEl = document.getElementById("todo-input");
+      const addButtonEl = document.getElementById("add-button");
+
+      let tasks = [];
+      let isAdding = false;
+      let nextRpcId = 0;
+      const pendingRequests = new Map();
+      const busyIds = new Set();
+
+      const render = () => {
+        listEl.textContent = "";
+
+        if (tasks.length === 0) {
+          const emptyEl = document.createElement("li");
+          emptyEl.className = "empty";
+          emptyEl.textContent = "No tasks yet.";
+          listEl.appendChild(emptyEl);
+          return;
+        }
+
+        for (const task of tasks) {
+          const rowEl = document.createElement("li");
+          rowEl.dataset.id = task.id;
+          rowEl.dataset.completed = String(Boolean(task.completed));
+          rowEl.dataset.busy = String(busyIds.has(task.id));
+
+          const checkboxEl = document.createElement("input");
+          checkboxEl.type = "checkbox";
+          checkboxEl.checked = Boolean(task.completed);
+          checkboxEl.disabled = task.completed || busyIds.has(task.id);
+
+          const titleEl = document.createElement("span");
+          titleEl.className = "title";
+          titleEl.textContent = task.title;
+
+          rowEl.appendChild(checkboxEl);
+          rowEl.appendChild(titleEl);
+          listEl.appendChild(rowEl);
+        }
+      };
+
+      const applyToolResult = (toolResult) => {
+        const nextTasks = toolResult?.structuredContent?.tasks;
+        if (Array.isArray(nextTasks)) {
+          tasks = nextTasks;
+          render();
+        }
+      };
+
+      const rpcNotify = (method, params) => {
+        window.parent.postMessage({ jsonrpc: "2.0", method, params }, "*");
+      };
+
+      const rpcRequest = (method, params) =>
+        new Promise((resolve, reject) => {
+          const id = ++nextRpcId;
+          pendingRequests.set(id, { resolve, reject });
+          window.parent.postMessage({ jsonrpc: "2.0", id, method, params }, "*");
+        });
+
+      window.addEventListener(
+        "message",
+        (event) => {
+          if (event.source !== window.parent) {
+            return;
+          }
+
+          const message = event.data;
+          if (!message || message.jsonrpc !== "2.0") {
+            return;
+          }
+
+          if (typeof message.id === "number") {
+            const pending = pendingRequests.get(message.id);
+            if (!pending) {
+              return;
+            }
+
+            pendingRequests.delete(message.id);
+            if (message.error) {
+              pending.reject(message.error);
+              return;
+            }
+
+            pending.resolve(message.result);
+            return;
+          }
+
+          if (message.method === "ui/notifications/tool-result") {
+            applyToolResult(message.params);
+          }
+        },
+        { passive: true }
+      );
+
+      const initializeBridge = async () => {
+        await rpcRequest("ui/initialize", {
+          appInfo: { name: "todo-widget", version: "0.1.0" },
+          appCapabilities: {},
+          protocolVersion: "2026-01-26"
+        });
+        rpcNotify("ui/notifications/initialized", {});
+      };
+
+      const bridgeReady = initializeBridge();
+
+      const callTool = async (name, args) => {
+        await bridgeReady;
+        const result = await rpcRequest("tools/call", {
+          name,
+          arguments: args
+        });
+        applyToolResult(result);
+        return result;
+      };
+
+      formEl.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const title = inputEl.value.trim();
+        if (!title || isAdding) {
+          return;
+        }
+
+        isAdding = true;
+        addButtonEl.disabled = true;
+        inputEl.disabled = true;
+
+        try {
+          await callTool("add_todo", { title });
+          inputEl.value = "";
+        } catch (error) {
+          console.error("Failed to add todo", error);
+        } finally {
+          isAdding = false;
+          addButtonEl.disabled = false;
+          inputEl.disabled = false;
+          inputEl.focus();
+        }
+      });
+
+      listEl.addEventListener("change", async (event) => {
+        const checkboxEl = event.target;
+        if (!(checkboxEl instanceof HTMLInputElement) || checkboxEl.type !== "checkbox") {
+          return;
+        }
+
+        const rowEl = checkboxEl.closest("li");
+        const id = rowEl?.dataset.id;
+        if (!id || busyIds.has(id) || checkboxEl.checked !== true) {
+          return;
+        }
+
+        busyIds.add(id);
+        render();
+
+        try {
+          await callTool("complete_todo", { id });
+        } catch (error) {
+          console.error("Failed to complete todo", error);
+        } finally {
+          busyIds.delete(id);
+          render();
+        }
+      });
+
+      render();
+    </script>
+  </body>
+</html>

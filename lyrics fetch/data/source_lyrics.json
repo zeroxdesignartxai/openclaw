@@ -1,0 +1,16 @@
+[
+  {
+    "id": "sample-neon-city",
+    "title": "Neon City Nights",
+    "artist": "Sample Artist",
+    "genre": "Synthpop",
+    "lyrics": "Street lights blur into the rain and the skyline hums awake. We chase the glow through midnight traffic and hear the city breathing under our feet."
+  },
+  {
+    "id": "sample-dust-road",
+    "title": "Dust Road Home",
+    "artist": "Sample Writer",
+    "genre": "Country",
+    "lyrics": "Old tires sing on a gravel shoulder while a porch light waits across the field. A tired heart leans on the dark for comfort and keeps one promise left to keep."
+  }
+]

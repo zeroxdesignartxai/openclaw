@@ -1,0 +1,83 @@
+{
+  "source_count": 4,
+  "genres": {
+    "pop": {
+      "top_songs": [
+        {
+          "platform": "tiktok",
+          "title": "Glass House Summer",
+          "artist": "Trend Sample",
+          "score": 1.0223
+        },
+        {
+          "platform": "spotify",
+          "title": "Midnight Run",
+          "artist": "Trend Sample",
+          "score": 0.9335
+        }
+      ],
+      "top_themes": [
+        "ambition",
+        "night drive",
+        "escape",
+        "late summer",
+        "romance",
+        "momentum"
+      ],
+      "top_moods": [
+        "euphoric",
+        "restless",
+        "bright",
+        "confident"
+      ],
+      "top_production": [
+        "synth heavy",
+        "wide chorus",
+        "punchy drums",
+        "short hook",
+        "percussive lift",
+        "melodic chant"
+      ],
+      "average_score": 0.9779
+    },
+    "country": {
+      "top_songs": [
+        {
+          "platform": "apple_music",
+          "title": "Smoke in the Rearview",
+          "artist": "Trend Sample",
+          "score": 0.8594
+        },
+        {
+          "platform": "youtube",
+          "title": "County Line Fire",
+          "artist": "Trend Sample",
+          "score": 0.7722
+        }
+      ],
+      "top_themes": [
+        "small town",
+        "regret",
+        "memory",
+        "healing",
+        "distance",
+        "forgiveness"
+      ],
+      "top_moods": [
+        "nostalgic",
+        "raw",
+        "cinematic",
+        "resilient"
+      ],
+      "top_production": [
+        "acoustic intro",
+        "anthem hook",
+        "stacked harmonies",
+        "open verse",
+        "big bridge",
+        "live feel drums"
+      ],
+      "average_score": 0.8158
+    }
+  }
+}

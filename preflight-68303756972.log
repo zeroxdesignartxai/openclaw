@@ -1,0 +1,665 @@
+﻿2026-03-24T05:16:17.1796876Z Current runner version: '2.332.0'
+2026-03-24T05:16:17.1800623Z Runner name: 'blacksmith-01kmf422a4x6ynj3nd9jrm4em6-16vcpu'
+2026-03-24T05:16:17.1801235Z Runner group name: 'blacksmith runners 01kehh8g695c1nehfqhfcdevv0'
+2026-03-24T05:16:17.1801876Z Machine name: 'ip-172-31-64-123'
+2026-03-24T05:16:17.1803283Z ##[group]GITHUB_TOKEN Permissions
+2026-03-24T05:16:17.1804543Z Contents: read
+2026-03-24T05:16:17.1804838Z Metadata: read
+2026-03-24T05:16:17.1805174Z Packages: read
+2026-03-24T05:16:17.1805474Z ##[endgroup]
+2026-03-24T05:16:17.1806731Z Secret source: Actions
+2026-03-24T05:16:17.1807150Z Prepare workflow directory
+2026-03-24T05:16:17.2006180Z Prepare all required actions
+2026-03-24T05:16:17.2026405Z Getting action download info
+2026-03-24T05:16:17.6475806Z Download action repository 'actions/checkout@v6' (SHA:de0fac2e4500dabe0009e67214ff5f5447ce83dd)
+2026-03-24T05:16:17.6829077Z Download action repository 'actions/setup-python@v6' (SHA:a309ff8b426b58ec0e2a45f0f869d46889d02405)
+2026-03-24T05:16:18.1089923Z Download action repository 'actions/cache@v5' (SHA:668228422ae6a00e4ad889ee87cd7109ec5666a7)
+2026-03-24T05:16:18.6133916Z Setting BLACKSMITH_ACTIONS_RESULTS_URL to https://results-receiver.actions.githubusercontent.com/
+2026-03-24T05:16:18.6156175Z Complete job name: preflight
+2026-03-24T05:16:18.6432664Z A job started hook has been configured by the self-hosted runner administrator
+2026-03-24T05:16:18.6529575Z ##[group]Run '/setup.sh'
+2026-03-24T05:16:18.6542247Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-03-24T05:16:18.6542658Z ##[endgroup]
+2026-03-24T05:16:18.6704672Z Logging daemon started (blacksmithd for logs)
+2026-03-24T05:16:18.6778654Z Results daemon started (blacksmithd for results)
+2026-03-24T05:16:18.6780134Z Background adoption and SSH setup started (PID: 3635)
+2026-03-24T05:16:18.6780590Z 
+2026-03-24T05:16:18.6781133Z ----------------------------------------
+2026-03-24T05:16:18.6781508Z SSH Access (using your GitHub SSH key):
+2026-03-24T05:16:18.6782016Z   ssh -p 64002 runner@blacksmith-01kmf422a4x6ynj3nd9jrm4em6-16vcpu.vm.blacksmith.sh
+2026-03-24T05:16:18.6782380Z 
+2026-03-24T05:16:18.6782520Z No GitHub SSH key? Add one at:
+2026-03-24T05:16:18.6783080Z https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+2026-03-24T05:16:18.6783523Z 
+2026-03-24T05:16:18.6783642Z ----------------------------------------
+2026-03-24T05:16:18.6783835Z 
+2026-03-24T05:16:18.6784033Z VM ID: blacksmith-01kmf422a4x6ynj3nd9jrm4em6-16vcpu
+2026-03-24T05:16:18.6784353Z Host: production-125.253.79.17-x8664
+2026-03-24T05:16:18.6784646Z Host Agent PID: 3919162
+2026-03-24T05:16:18.6784901Z Agent Process Count: 1
+2026-03-24T05:16:18.6785158Z Host Agent Git SHA: 1fd3ede1
+2026-03-24T05:16:18.6785443Z Host CPU Manufacturer: AuthenticAMD
+2026-03-24T05:16:18.6785741Z Blacksmith Host Generation: gen 2
+2026-03-24T05:16:18.6786050Z Petname: production-factual-caiman-1e2662f3
+2026-03-24T05:16:18.6786547Z Region: eu-west
+2026-03-24T05:16:18.6786934Z Rootfs Version: ubuntu24-full-x64-012126
+2026-03-24T05:16:18.6787299Z GitHub traffic proxy: disabled
+2026-03-24T05:16:18.6800230Z OS Version: Ubuntu 24.04.3 LTS
+2026-03-24T05:16:18.6806856Z System Statistics:
+2026-03-24T05:16:18.6807510Z -----------------
+2026-03-24T05:16:18.6807902Z VM CPU Count: 4
+2026-03-24T05:16:18.6808193Z Host Available CPUs: 0
+2026-03-24T05:16:18.6808341Z 
+2026-03-24T05:16:18.6808431Z Jobs by Process ID:
+2026-03-24T05:16:18.6808644Z -----------------
+2026-03-24T05:16:18.6808967Z PID 3919162: 5 jobs
+2026-03-24T05:16:18.6809189Z Total: 5 jobs across 1 process
+2026-03-24T05:16:18.6809351Z 
+2026-03-24T05:16:18.6809443Z Devices by Process ID:
+2026-03-24T05:16:18.6809659Z -----------------
+2026-03-24T05:16:18.6809870Z PID 3919162: 5 devices
+2026-03-24T05:16:18.6814022Z Total: 5 devices across 1 process
+2026-03-24T05:16:18.6814752Z Enabling Blacksmith transparent cache
+2026-03-24T05:16:18.7015312Z ##[group]Run actions/checkout@v6
+2026-03-24T05:16:18.7015644Z with:
+2026-03-24T05:16:18.7015840Z   fetch-depth: 1
+2026-03-24T05:16:18.7016348Z   fetch-tags: false
+2026-03-24T05:16:18.7016551Z   submodules: false
+2026-03-24T05:16:18.7016774Z   repository: openclaw/openclaw
+2026-03-24T05:16:18.7017149Z   token: ***
+2026-03-24T05:16:18.7017350Z   ssh-strict: true
+2026-03-24T05:16:18.7017553Z   ssh-user: git
+2026-03-24T05:16:18.7017765Z   persist-credentials: true
+2026-03-24T05:16:18.7018004Z   clean: true
+2026-03-24T05:16:18.7018215Z   sparse-checkout-cone-mode: true
+2026-03-24T05:16:18.7018470Z   show-progress: true
+2026-03-24T05:16:18.7018681Z   lfs: false
+2026-03-24T05:16:18.7018883Z   set-safe-directory: true
+2026-03-24T05:16:18.7019105Z env:
+2026-03-24T05:16:18.7019314Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:18.7019600Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:18.7019855Z ##[endgroup]
+2026-03-24T05:16:18.8035955Z Syncing repository: openclaw/openclaw
+2026-03-24T05:16:18.8036911Z ##[group]Getting Git version info
+2026-03-24T05:16:18.8037275Z Working directory is '/home/runner/_work/openclaw/openclaw'
+2026-03-24T05:16:18.8037791Z [command]/usr/bin/git version
+2026-03-24T05:16:18.8043308Z git version 2.52.0
+2026-03-24T05:16:18.8055027Z ##[endgroup]
+2026-03-24T05:16:18.8060302Z Temporarily overriding HOME='/home/runner/_work/_temp/33c7a2db-c04c-4be9-bfa3-8a3510583a88' before making global git config changes
+2026-03-24T05:16:18.8061002Z Adding repository directory to the temporary git global config as a safe directory
+2026-03-24T05:16:18.8062902Z [command]/usr/bin/git config --global --add safe.directory /home/runner/_work/openclaw/openclaw
+2026-03-24T05:16:18.8083652Z Deleting the contents of '/home/runner/_work/openclaw/openclaw'
+2026-03-24T05:16:18.8085636Z ##[group]Initializing the repository
+2026-03-24T05:16:18.8088259Z [command]/usr/bin/git init /home/runner/_work/openclaw/openclaw
+2026-03-24T05:16:18.8116740Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-03-24T05:16:18.8117336Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-03-24T05:16:18.8117945Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-03-24T05:16:18.8118304Z hint: call:
+2026-03-24T05:16:18.8118490Z hint:
+2026-03-24T05:16:18.8118765Z hint: 	git config --global init.defaultBranch <name>
+2026-03-24T05:16:18.8119147Z hint:
+2026-03-24T05:16:18.8119434Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-03-24T05:16:18.8119897Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-03-24T05:16:18.8120252Z hint:
+2026-03-24T05:16:18.8120444Z hint: 	git branch -m <name>
+2026-03-24T05:16:18.8120669Z hint:
+2026-03-24T05:16:18.8120980Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-03-24T05:16:18.8123660Z Initialized empty Git repository in /home/runner/_work/openclaw/openclaw/.git/
+2026-03-24T05:16:18.8129750Z [command]/usr/bin/git remote add origin https://github.com/openclaw/openclaw
+2026-03-24T05:16:18.8147430Z ##[endgroup]
+2026-03-24T05:16:18.8147811Z ##[group]Disabling automatic garbage collection
+2026-03-24T05:16:18.8149636Z [command]/usr/bin/git config --local gc.auto 0
+2026-03-24T05:16:18.8161217Z ##[endgroup]
+2026-03-24T05:16:18.8161599Z ##[group]Setting up auth
+2026-03-24T05:16:18.8161892Z Removing SSH command configuration
+2026-03-24T05:16:18.8164606Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-03-24T05:16:18.8177674Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-03-24T05:16:18.8306522Z Removing HTTP extra header
+2026-03-24T05:16:18.8307898Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-03-24T05:16:18.8320654Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-03-24T05:16:18.8410647Z Removing includeIf entries pointing to credentials config files
+2026-03-24T05:16:18.8413239Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-03-24T05:16:18.8426650Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-03-24T05:16:18.8522443Z [command]/usr/bin/git config --file /home/runner/_work/_temp/git-credentials-32d90f3b-f332-4324-b97d-a8ba2341eb2b.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-03-24T05:16:18.8534652Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/_work/openclaw/openclaw/.git.path /home/runner/_work/_temp/git-credentials-32d90f3b-f332-4324-b97d-a8ba2341eb2b.config
+2026-03-24T05:16:18.8545508Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/_work/openclaw/openclaw/.git/worktrees/*.path /home/runner/_work/_temp/git-credentials-32d90f3b-f332-4324-b97d-a8ba2341eb2b.config
+2026-03-24T05:16:18.8563134Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-32d90f3b-f332-4324-b97d-a8ba2341eb2b.config
+2026-03-24T05:16:18.8574431Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-32d90f3b-f332-4324-b97d-a8ba2341eb2b.config
+2026-03-24T05:16:18.8583190Z ##[endgroup]
+2026-03-24T05:16:18.8583589Z ##[group]Fetching the repository
+2026-03-24T05:16:18.8618618Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +cbb11b36621186c9e8c153b5a5c165586c2a4225:refs/remotes/origin/main
+2026-03-24T05:16:21.1614373Z From https://github.com/openclaw/openclaw
+2026-03-24T05:16:21.1614816Z  * [new ref]         cbb11b36621186c9e8c153b5a5c165586c2a4225 -> origin/main
+2026-03-24T05:16:21.1638368Z [command]/usr/bin/git branch --list --remote origin/main
+2026-03-24T05:16:21.1650427Z   origin/main
+2026-03-24T05:16:21.1655820Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-03-24T05:16:21.1665346Z cbb11b36621186c9e8c153b5a5c165586c2a4225
+2026-03-24T05:16:21.1666865Z ##[endgroup]
+2026-03-24T05:16:21.1667109Z ##[group]Determining the checkout info
+2026-03-24T05:16:21.1667672Z ##[endgroup]
+2026-03-24T05:16:21.1669966Z [command]/usr/bin/git sparse-checkout disable
+2026-03-24T05:16:21.1690941Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-03-24T05:16:21.1701643Z ##[group]Checking out the ref
+2026-03-24T05:16:21.1703544Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-03-24T05:16:21.4989447Z Switched to a new branch 'main'
+2026-03-24T05:16:21.4990240Z branch 'main' set up to track 'origin/main'.
+2026-03-24T05:16:21.4997150Z ##[endgroup]
+2026-03-24T05:16:21.5026163Z [command]/usr/bin/git log -1 --format=%H
+2026-03-24T05:16:21.5039727Z cbb11b36621186c9e8c153b5a5c165586c2a4225
+2026-03-24T05:16:21.5153364Z Prepare all required actions
+2026-03-24T05:16:21.5190387Z ##[group]Run ./.github/actions/ensure-base-commit
+2026-03-24T05:16:21.5190525Z with:
+2026-03-24T05:16:21.5190634Z   base-sha: 5c9e4cd30a1ee9189f5f7d9d6dfa75b9a3a98ad8
+2026-03-24T05:16:21.5190770Z   fetch-ref: main
+2026-03-24T05:16:21.5190854Z env:
+2026-03-24T05:16:21.5190948Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:21.5191069Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:21.5191182Z ##[endgroup]
+2026-03-24T05:16:21.5243295Z ##[group]Run set -euo pipefail
+2026-03-24T05:16:21.5243527Z [36;1mset -euo pipefail[0m
+2026-03-24T05:16:21.5243695Z [36;1m[0m
+2026-03-24T05:16:21.5243894Z [36;1mif [ -z "$BASE_SHA" ] || [[ "$BASE_SHA" =~ ^0+$ ]]; then[0m
+2026-03-24T05:16:21.5244226Z [36;1m  echo "No concrete base SHA available; skipping targeted fetch."[0m
+2026-03-24T05:16:21.5244478Z [36;1m  exit 0[0m
+2026-03-24T05:16:21.5244593Z [36;1mfi[0m
+2026-03-24T05:16:21.5244672Z [36;1m[0m
+2026-03-24T05:16:21.5244824Z [36;1mif git rev-parse --verify "$BASE_SHA^{commit}" >/dev/null 2>&1; then[0m
+2026-03-24T05:16:21.5245250Z [36;1m  echo "Base commit already present: $BASE_SHA"[0m
+2026-03-24T05:16:21.5245452Z [36;1m  exit 0[0m
+2026-03-24T05:16:21.5245576Z [36;1mfi[0m
+2026-03-24T05:16:21.5245697Z [36;1m[0m
+2026-03-24T05:16:21.5245830Z [36;1mfor deepen_by in 25 100 300; do[0m
+2026-03-24T05:16:21.5246017Z [36;1m  echo "Base commit missing; deepening $FETCH_REF by $deepen_by."[0m
+2026-03-24T05:16:21.5246222Z [36;1m  if ! git fetch --no-tags --deepen="$deepen_by" origin "$FETCH_REF"; then[0m
+2026-03-24T05:16:21.5246516Z [36;1m    echo "::warning title=ensure-base-commit fetch failed::Failed to deepen $FETCH_REF by $deepen_by while looking for $BASE_SHA"[0m
+2026-03-24T05:16:21.5246754Z [36;1m  fi[0m
+2026-03-24T05:16:21.5246888Z [36;1m  if git rev-parse --verify "$BASE_SHA^{commit}" >/dev/null 2>&1; then[0m
+2026-03-24T05:16:21.5247094Z [36;1m    echo "Resolved base commit after deepening: $BASE_SHA"[0m
+2026-03-24T05:16:21.5247245Z [36;1m    exit 0[0m
+2026-03-24T05:16:21.5247334Z [36;1m  fi[0m
+2026-03-24T05:16:21.5247413Z [36;1mdone[0m
+2026-03-24T05:16:21.5247490Z [36;1m[0m
+2026-03-24T05:16:21.5247625Z [36;1mecho "Base commit still missing; fetching full history for $FETCH_REF."[0m
+2026-03-24T05:16:21.5247929Z [36;1mif ! git fetch --no-tags origin "$FETCH_REF"; then[0m
+2026-03-24T05:16:21.5248228Z [36;1m  echo "::warning title=ensure-base-commit fetch failed::Failed to fetch full history for $FETCH_REF while looking for $BASE_SHA"[0m
+2026-03-24T05:16:21.5248535Z [36;1mfi[0m
+2026-03-24T05:16:21.5248729Z [36;1mif git rev-parse --verify "$BASE_SHA^{commit}" >/dev/null 2>&1; then[0m
+2026-03-24T05:16:21.5249005Z [36;1m  echo "Resolved base commit after full ref fetch: $BASE_SHA"[0m
+2026-03-24T05:16:21.5249238Z [36;1m  exit 0[0m
+2026-03-24T05:16:21.5249368Z [36;1mfi[0m
+2026-03-24T05:16:21.5249485Z [36;1m[0m
+2026-03-24T05:16:21.5249699Z [36;1mecho "Base commit still unavailable after fetch attempts: $BASE_SHA"[0m
+2026-03-24T05:16:21.5265300Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-03-24T05:16:21.5265442Z env:
+2026-03-24T05:16:21.5265541Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:21.5265667Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:21.5265807Z   BASE_SHA: 5c9e4cd30a1ee9189f5f7d9d6dfa75b9a3a98ad8
+2026-03-24T05:16:21.5265945Z   FETCH_REF: main
+2026-03-24T05:16:21.5266078Z ##[endgroup]
+2026-03-24T05:16:21.5298213Z Base commit missing; deepening main by 25.
+2026-03-24T05:16:22.3090002Z From https://github.com/openclaw/openclaw
+2026-03-24T05:16:22.3090513Z  * branch            main       -> FETCH_HEAD
+2026-03-24T05:16:22.3105104Z Resolved base commit after deepening: 5c9e4cd30a1ee9189f5f7d9d6dfa75b9a3a98ad8
+2026-03-24T05:16:22.3141173Z Prepare all required actions
+2026-03-24T05:16:22.3163442Z ##[group]Run ./.github/actions/detect-docs-changes
+2026-03-24T05:16:22.3163576Z env:
+2026-03-24T05:16:22.3163670Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:22.3163795Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:22.3163905Z ##[endgroup]
+2026-03-24T05:16:22.3184211Z ##[group]Run if [ "push" = "push" ]; then
+2026-03-24T05:16:22.3184372Z [36;1mif [ "push" = "push" ]; then[0m
+2026-03-24T05:16:22.3184513Z [36;1m  BASE="5c9e4cd30a1ee9189f5f7d9d6dfa75b9a3a98ad8"[0m
+2026-03-24T05:16:22.3184647Z [36;1melse[0m
+2026-03-24T05:16:22.3184779Z [36;1m  # Use the exact base SHA from the event payload — stable regardless[0m
+2026-03-24T05:16:22.3184972Z [36;1m  # of base branch movement (avoids origin/<ref> drift).[0m
+2026-03-24T05:16:22.3185113Z [36;1m  BASE=""[0m
+2026-03-24T05:16:22.3185206Z [36;1mfi[0m
+2026-03-24T05:16:22.3185284Z [36;1m[0m
+2026-03-24T05:16:22.3185428Z [36;1m# Fail-safe: if we can't diff, assume non-docs (run everything)[0m
+2026-03-24T05:16:22.3185638Z [36;1mCHANGED=$(git diff --name-only "$BASE" HEAD 2>/dev/null || echo "UNKNOWN")[0m
+2026-03-24T05:16:22.3185836Z [36;1mif [ "$CHANGED" = "UNKNOWN" ] || [ -z "$CHANGED" ]; then[0m
+2026-03-24T05:16:22.3185996Z [36;1m  echo "docs_only=false" >> "$GITHUB_OUTPUT"[0m
+2026-03-24T05:16:22.3186140Z [36;1m  echo "docs_changed=false" >> "$GITHUB_OUTPUT"[0m
+2026-03-24T05:16:22.3186266Z [36;1m  exit 0[0m
+2026-03-24T05:16:22.3186343Z [36;1mfi[0m
+2026-03-24T05:16:22.3186417Z [36;1m[0m
+2026-03-24T05:16:22.3186502Z [36;1m# Check if any changed file is a doc[0m
+2026-03-24T05:16:22.3186657Z [36;1mDOCS=$(echo "$CHANGED" | grep -E '^docs/|\.md$|\.mdx$' || true)[0m
+2026-03-24T05:16:22.3186804Z [36;1mif [ -n "$DOCS" ]; then[0m
+2026-03-24T05:16:22.3186928Z [36;1m  echo "docs_changed=true" >> "$GITHUB_OUTPUT"[0m
+2026-03-24T05:16:22.3187053Z [36;1melse[0m
+2026-03-24T05:16:22.3187153Z [36;1m  echo "docs_changed=false" >> "$GITHUB_OUTPUT"[0m
+2026-03-24T05:16:22.3187273Z [36;1mfi[0m
+2026-03-24T05:16:22.3187344Z [36;1m[0m
+2026-03-24T05:16:22.3187445Z [36;1m# Check if all changed files are docs or markdown[0m
+2026-03-24T05:16:22.3187613Z [36;1mNON_DOCS=$(echo "$CHANGED" | grep -vE '^docs/|\.md$|\.mdx$' || true)[0m
+2026-03-24T05:16:22.3187773Z [36;1mif [ -z "$NON_DOCS" ]; then[0m
+2026-03-24T05:16:22.3187897Z [36;1m  echo "docs_only=true" >> "$GITHUB_OUTPUT"[0m
+2026-03-24T05:16:22.3188053Z [36;1m  echo "Docs-only change detected — skipping heavy jobs"[0m
+2026-03-24T05:16:22.3188188Z [36;1melse[0m
+2026-03-24T05:16:22.3188283Z [36;1m  echo "docs_only=false" >> "$GITHUB_OUTPUT"[0m
+2026-03-24T05:16:22.3188406Z [36;1mfi[0m
+2026-03-24T05:16:22.3202592Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-03-24T05:16:22.3202725Z env:
+2026-03-24T05:16:22.3202819Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:22.3202944Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:22.3203052Z ##[endgroup]
+2026-03-24T05:16:22.3286679Z ##[group]Run set -euo pipefail
+2026-03-24T05:16:22.3286825Z [36;1mset -euo pipefail[0m
+2026-03-24T05:16:22.3286933Z [36;1m[0m
+2026-03-24T05:16:22.3287021Z [36;1mif [ "push" = "push" ]; then[0m
+2026-03-24T05:16:22.3287162Z [36;1m  BASE="5c9e4cd30a1ee9189f5f7d9d6dfa75b9a3a98ad8"[0m
+2026-03-24T05:16:22.3287290Z [36;1melse[0m
+2026-03-24T05:16:22.3287370Z [36;1m  BASE=""[0m
+2026-03-24T05:16:22.3287453Z [36;1mfi[0m
+2026-03-24T05:16:22.3287527Z [36;1m[0m
+2026-03-24T05:16:22.3287648Z [36;1mnode scripts/ci-changed-scope.mjs --base "$BASE" --head HEAD[0m
+2026-03-24T05:16:22.3297557Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-03-24T05:16:22.3297696Z env:
+2026-03-24T05:16:22.3297786Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:22.3297912Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:22.3298114Z ##[endgroup]
+2026-03-24T05:16:22.5703582Z Prepare all required actions
+2026-03-24T05:16:22.5703769Z Getting action download info
+2026-03-24T05:16:22.8187323Z Download action repository 'actions/setup-node@v6' (SHA:53b83947a5a98c8d113130e565377fae1a50d02f)
+2026-03-24T05:16:23.2684804Z Download action repository 'oven-sh/setup-bun@v2.2.0' (SHA:0c5077e51419868618aeaa5fe8019c62421857d6)
+2026-03-24T05:16:23.6733093Z ##[group]Run ./.github/actions/setup-node-env
+2026-03-24T05:16:23.6733219Z with:
+2026-03-24T05:16:23.6733304Z   install-bun: false
+2026-03-24T05:16:23.6733399Z   install-deps: false
+2026-03-24T05:16:23.6733488Z   use-sticky-disk: false
+2026-03-24T05:16:23.6733581Z   node-version: 24.x
+2026-03-24T05:16:23.6733668Z   cache-key-suffix: node24
+2026-03-24T05:16:23.6733768Z   pnpm-version: 10.23.0
+2026-03-24T05:16:23.6733857Z   frozen-lockfile: true
+2026-03-24T05:16:23.6733944Z env:
+2026-03-24T05:16:23.6734041Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:23.6734191Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:23.6734314Z ##[endgroup]
+2026-03-24T05:16:23.6757136Z ##[group]Run set -euo pipefail
+2026-03-24T05:16:23.6757266Z [36;1mset -euo pipefail[0m
+2026-03-24T05:16:23.6757373Z [36;1mgit submodule sync --recursive[0m
+2026-03-24T05:16:23.6757488Z [36;1mfor attempt in 1 2 3 4 5; do[0m
+2026-03-24T05:16:23.6757683Z [36;1m  if git -c protocol.version=2 submodule update --init --force --depth=1 --recursive; then[0m
+2026-03-24T05:16:23.6757871Z [36;1m    exit 0[0m
+2026-03-24T05:16:23.6757953Z [36;1m  fi[0m
+2026-03-24T05:16:23.6758087Z [36;1m  echo "Submodule update failed (attempt $attempt/5). Retrying…"[0m
+2026-03-24T05:16:23.6758284Z [36;1m  sleep $((attempt * 10))[0m
+2026-03-24T05:16:23.6758386Z [36;1mdone[0m
+2026-03-24T05:16:23.6758460Z [36;1mexit 1[0m
+2026-03-24T05:16:23.6772531Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-03-24T05:16:23.6772662Z env:
+2026-03-24T05:16:23.6772751Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:23.6772880Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:23.6772986Z ##[endgroup]
+2026-03-24T05:16:23.6998309Z ##[group]Run actions/setup-node@v6
+2026-03-24T05:16:23.6998441Z with:
+2026-03-24T05:16:23.6998527Z   node-version: 24.x
+2026-03-24T05:16:23.6998624Z   check-latest: false
+2026-03-24T05:16:23.6998784Z   token: ***
+2026-03-24T05:16:23.6998883Z   package-manager-cache: true
+2026-03-24T05:16:23.7000023Z env:
+2026-03-24T05:16:23.7000121Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:23.7000259Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:23.7000385Z ##[endgroup]
+2026-03-24T05:16:23.7847623Z Found in cache @ /opt/hostedtoolcache/node/24.13.0/x64
+2026-03-24T05:16:23.7849272Z ##[group]Environment details
+2026-03-24T05:16:23.9381103Z node: v24.13.0
+2026-03-24T05:16:23.9381406Z npm: 11.6.2
+2026-03-24T05:16:23.9381667Z yarn: 1.22.22
+2026-03-24T05:16:23.9381992Z ##[endgroup]
+2026-03-24T05:16:23.9451470Z Prepare all required actions
+2026-03-24T05:16:23.9451630Z Getting action download info
+2026-03-24T05:16:24.1711794Z Download action repository 'useblacksmith/stickydisk@v1' (SHA:53fa0c2f644d5d6ce16c601f25e3e9f8f267ee38)
+2026-03-24T05:16:24.5716637Z ##[group]Run ./.github/actions/setup-pnpm-store-cache
+2026-03-24T05:16:24.5716777Z with:
+2026-03-24T05:16:24.5716861Z   pnpm-version: 10.23.0
+2026-03-24T05:16:24.5716958Z   cache-key-suffix: node24
+2026-03-24T05:16:24.5717055Z   use-sticky-disk: false
+2026-03-24T05:16:24.5717150Z   use-restore-keys: true
+2026-03-24T05:16:24.5717246Z   use-actions-cache: true
+2026-03-24T05:16:24.5717339Z env:
+2026-03-24T05:16:24.5717427Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:24.5717553Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:24.5717660Z ##[endgroup]
+2026-03-24T05:16:24.5756633Z ##[group]Run set -euo pipefail
+2026-03-24T05:16:24.5756777Z [36;1mset -euo pipefail[0m
+2026-03-24T05:16:24.5756930Z [36;1mif [[ ! "$PNPM_VERSION" =~ ^[0-9]+(\.[0-9]+){1,2}([.-][0-9A-Za-z.-]+)?$ ]]; then[0m
+2026-03-24T05:16:24.5757213Z [36;1m  echo "::error::Invalid pnpm-version input: '$PNPM_VERSION'"[0m
+2026-03-24T05:16:24.5757447Z [36;1m  exit 2[0m
+2026-03-24T05:16:24.5757529Z [36;1mfi[0m
+2026-03-24T05:16:24.5757611Z [36;1mcorepack enable[0m
+2026-03-24T05:16:24.5757712Z [36;1mfor attempt in 1 2 3; do[0m
+2026-03-24T05:16:24.5757852Z [36;1m  if corepack prepare "pnpm@$PNPM_VERSION" --activate; then[0m
+2026-03-24T05:16:24.5757997Z [36;1m    pnpm -v[0m
+2026-03-24T05:16:24.5758081Z [36;1m    exit 0[0m
+2026-03-24T05:16:24.5758164Z [36;1m  fi[0m
+2026-03-24T05:16:24.5758287Z [36;1m  echo "corepack prepare failed (attempt $attempt/3). Retrying..."[0m
+2026-03-24T05:16:24.5758447Z [36;1m  sleep $((attempt * 10))[0m
+2026-03-24T05:16:24.5758547Z [36;1mdone[0m
+2026-03-24T05:16:24.5758623Z [36;1mexit 1[0m
+2026-03-24T05:16:24.5774752Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-03-24T05:16:24.5774892Z env:
+2026-03-24T05:16:24.5774981Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:24.5775110Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:24.5775222Z   PNPM_VERSION: 10.23.0
+2026-03-24T05:16:24.5775315Z ##[endgroup]
+2026-03-24T05:16:24.6323887Z Preparing pnpm@10.23.0 for immediate activation...
+2026-03-24T05:16:25.0322846Z 10.23.0
+2026-03-24T05:16:25.0369791Z ##[group]Run echo "path=$(pnpm store path --silent)" >> "$GITHUB_OUTPUT"
+2026-03-24T05:16:25.0370149Z [36;1mecho "path=$(pnpm store path --silent)" >> "$GITHUB_OUTPUT"[0m
+2026-03-24T05:16:25.0388450Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-03-24T05:16:25.0388601Z env:
+2026-03-24T05:16:25.0388703Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:25.0388831Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:25.0388946Z ##[endgroup]
+2026-03-24T05:16:25.2459250Z ##[group]Run actions/cache@v5
+2026-03-24T05:16:25.2459373Z with:
+2026-03-24T05:16:25.2459474Z   path: /home/runner/.local/share/pnpm/store/v10
+2026-03-24T05:16:25.2459712Z   key: Linux-pnpm-store-node24-e9096b67283a064b53f8357393d8c70793d8b5cddc00d8431d45a594340117af
+2026-03-24T05:16:25.2459964Z   restore-keys: Linux-pnpm-store-node24-
+
+2026-03-24T05:16:25.2460090Z   enableCrossOsArchive: false
+2026-03-24T05:16:25.2460200Z   fail-on-cache-miss: false
+2026-03-24T05:16:25.2460301Z   lookup-only: false
+2026-03-24T05:16:25.2460397Z   save-always: false
+2026-03-24T05:16:25.2460482Z env:
+2026-03-24T05:16:25.2460575Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:25.2460696Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:25.2460813Z ##[endgroup]
+2026-03-24T05:16:25.3939384Z Cache not found for input keys: Linux-pnpm-store-node24-e9096b67283a064b53f8357393d8c70793d8b5cddc00d8431d45a594340117af, Linux-pnpm-store-node24-
+2026-03-24T05:16:25.3981700Z ##[group]Run node -v
+2026-03-24T05:16:25.3981832Z [36;1mnode -v[0m
+2026-03-24T05:16:25.3981919Z [36;1mnpm -v[0m
+2026-03-24T05:16:25.3982009Z [36;1mpnpm -v[0m
+2026-03-24T05:16:25.3982121Z [36;1mif command -v bun &>/dev/null; then bun -v; fi[0m
+2026-03-24T05:16:25.3997008Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-03-24T05:16:25.3997174Z env:
+2026-03-24T05:16:25.3997270Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:25.3997400Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:25.3997514Z ##[endgroup]
+2026-03-24T05:16:25.4037068Z v24.13.0
+2026-03-24T05:16:25.4378318Z npm warn Unknown project config "node-linker". This will stop working in the next major version of npm.
+2026-03-24T05:16:25.4383082Z 11.6.2
+2026-03-24T05:16:25.5623989Z 10.23.0
+2026-03-24T05:16:25.5685081Z ##[group]Run node --input-type=module <<'EOF'
+2026-03-24T05:16:25.5685352Z [36;1mnode --input-type=module <<'EOF'[0m
+2026-03-24T05:16:25.5685562Z [36;1mimport { appendFileSync } from "node:fs";[0m
+2026-03-24T05:16:25.5685878Z [36;1mimport { listChangedExtensionIds } from "./scripts/test-extension.mjs";[0m
+2026-03-24T05:16:25.5686157Z [36;1m[0m
+2026-03-24T05:16:25.5686321Z [36;1mconst extensionIds = listChangedExtensionIds({[0m
+2026-03-24T05:16:25.5686552Z [36;1m  base: process.env.BASE_SHA,[0m
+2026-03-24T05:16:25.5686940Z [36;1m  head: "HEAD",[0m
+2026-03-24T05:16:25.5687119Z [36;1m  fallbackBaseRef: process.env.BASE_REF,[0m
+2026-03-24T05:16:25.5687335Z [36;1m  unavailableBaseBehavior: "all",[0m
+2026-03-24T05:16:25.5687513Z [36;1m});[0m
+2026-03-24T05:16:25.5687801Z [36;1mconst matrix = JSON.stringify({ include: extensionIds.map((extension) => ({ extension })) });[0m
+2026-03-24T05:16:25.5688155Z [36;1m[0m
+2026-03-24T05:16:25.5688482Z [36;1mappendFileSync(process.env.GITHUB_OUTPUT, `has_changed_extensions=${extensionIds.length > 0}\n`, "utf8");[0m
+2026-03-24T05:16:25.5688982Z [36;1mappendFileSync(process.env.GITHUB_OUTPUT, `changed_extensions_matrix=${matrix}\n`, "utf8");[0m
+2026-03-24T05:16:25.5689307Z [36;1mEOF[0m
+2026-03-24T05:16:25.5708937Z shell: /usr/bin/bash -e {0}
+2026-03-24T05:16:25.5709120Z env:
+2026-03-24T05:16:25.5709266Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:25.5709475Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:25.5709699Z   BASE_SHA: 5c9e4cd30a1ee9189f5f7d9d6dfa75b9a3a98ad8
+2026-03-24T05:16:25.5709892Z   BASE_REF: main
+2026-03-24T05:16:25.5710022Z ##[endgroup]
+2026-03-24T05:16:25.5970281Z ##[group]Run actions/setup-python@v6
+2026-03-24T05:16:25.5970465Z with:
+2026-03-24T05:16:25.5970603Z   python-version: 3.12
+2026-03-24T05:16:25.5970773Z   cache: pip
+2026-03-24T05:16:25.5971043Z   cache-dependency-path: pyproject.toml
+.pre-commit-config.yaml
+.github/workflows/ci.yml
+
+2026-03-24T05:16:25.5971364Z   check-latest: false
+2026-03-24T05:16:25.5971576Z   token: ***
+2026-03-24T05:16:25.5971710Z   update-environment: true
+2026-03-24T05:16:25.5971879Z   allow-prereleases: false
+2026-03-24T05:16:25.5972031Z   freethreaded: false
+2026-03-24T05:16:25.5972174Z env:
+2026-03-24T05:16:25.5972304Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:25.5972501Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:25.5972667Z ##[endgroup]
+2026-03-24T05:16:25.6535586Z ##[group]Installed versions
+2026-03-24T05:16:25.6612572Z Successfully set up CPython (3.12.12)
+2026-03-24T05:16:25.6612986Z ##[endgroup]
+2026-03-24T05:16:25.6814568Z [command]/opt/hostedtoolcache/Python/3.12.12/x64/bin/pip cache dir
+2026-03-24T05:16:25.9217594Z /home/runner/.cache/pip
+2026-03-24T05:16:26.0135223Z Cache hit for: setup-python-Linux-x64-24.04-Ubuntu-python-3.12.12-pip-0d51b1f41955edd459ddfb813ca5dcf56d0a4893839726b970d0ee9796e237cb
+2026-03-24T05:16:26.0934114Z Received 19129114 of 19129114 (100.0%), 372.3 MBs/sec
+2026-03-24T05:16:26.0934351Z Cache Size: ~18 MB (19129114 B)
+2026-03-24T05:16:26.0946556Z [command]/usr/bin/tar -xf /home/runner/_work/_temp/8954cd29-3acf-485b-87a9-6d3ef99fc8b8/cache.tzst -P -C /home/runner/_work/openclaw/openclaw --use-compress-program unzstd
+2026-03-24T05:16:26.1177065Z Cache restored successfully
+2026-03-24T05:16:26.1191153Z Cache restored from key: setup-python-Linux-x64-24.04-Ubuntu-python-3.12.12-pip-0d51b1f41955edd459ddfb813ca5dcf56d0a4893839726b970d0ee9796e237cb
+2026-03-24T05:16:26.1528407Z ##[group]Run actions/cache@v5
+2026-03-24T05:16:26.1528606Z with:
+2026-03-24T05:16:26.1528738Z   path: ~/.cache/pre-commit
+2026-03-24T05:16:26.1529049Z   key: pre-commit-Linux-3.12.12-6a00878ef590dd052bec8850f88da2e68c2c36c1959026f5dc55e874382113b7
+2026-03-24T05:16:26.1529384Z   enableCrossOsArchive: false
+2026-03-24T05:16:26.1529557Z   fail-on-cache-miss: false
+2026-03-24T05:16:26.1529709Z   lookup-only: false
+2026-03-24T05:16:26.1529851Z   save-always: false
+2026-03-24T05:16:26.1529983Z env:
+2026-03-24T05:16:26.1530128Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:26.1530336Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:26.1530570Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.12/x64
+2026-03-24T05:16:26.1530890Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.12/x64/lib/pkgconfig
+2026-03-24T05:16:26.1531194Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.12/x64
+2026-03-24T05:16:26.1531496Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.12/x64
+2026-03-24T05:16:26.1531764Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.12/x64
+2026-03-24T05:16:26.1532287Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.12/x64/lib
+2026-03-24T05:16:26.1532521Z ##[endgroup]
+2026-03-24T05:16:26.2891382Z Cache hit for: pre-commit-Linux-3.12.12-6a00878ef590dd052bec8850f88da2e68c2c36c1959026f5dc55e874382113b7
+2026-03-24T05:16:26.3673189Z Received 7494673 of 7494673 (100.0%), 108.3 MBs/sec
+2026-03-24T05:16:26.3673392Z Cache Size: ~7 MB (7494673 B)
+2026-03-24T05:16:26.3689229Z [command]/usr/bin/tar -xf /home/runner/_work/_temp/449fd0f6-9882-4e90-86c8-646535f2977c/cache.tzst -P -C /home/runner/_work/openclaw/openclaw --use-compress-program unzstd
+2026-03-24T05:16:26.4024407Z Cache restored successfully
+2026-03-24T05:16:26.4097078Z Cache restored from key: pre-commit-Linux-3.12.12-6a00878ef590dd052bec8850f88da2e68c2c36c1959026f5dc55e874382113b7
+2026-03-24T05:16:26.4140363Z ##[group]Run python -m pip install --upgrade pip
+2026-03-24T05:16:26.4140569Z [36;1mpython -m pip install --upgrade pip[0m
+2026-03-24T05:16:26.4140727Z [36;1mpython -m pip install pre-commit[0m
+2026-03-24T05:16:26.4156058Z shell: /usr/bin/bash -e {0}
+2026-03-24T05:16:26.4156171Z env:
+2026-03-24T05:16:26.4156266Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:26.4156397Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:26.4156546Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.12/x64
+2026-03-24T05:16:26.4156728Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.12/x64/lib/pkgconfig
+2026-03-24T05:16:26.4156915Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.12/x64
+2026-03-24T05:16:26.4157078Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.12/x64
+2026-03-24T05:16:26.4157244Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.12/x64
+2026-03-24T05:16:26.4157410Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.12/x64/lib
+2026-03-24T05:16:26.4157576Z ##[endgroup]
+2026-03-24T05:16:26.6489936Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages (25.3)
+2026-03-24T05:16:26.7024193Z Collecting pip
+2026-03-24T05:16:26.7030883Z   Using cached pip-26.0.1-py3-none-any.whl.metadata (4.7 kB)
+2026-03-24T05:16:26.7047168Z Using cached pip-26.0.1-py3-none-any.whl (1.8 MB)
+2026-03-24T05:16:26.7145184Z Installing collected packages: pip
+2026-03-24T05:16:26.7145777Z   Attempting uninstall: pip
+2026-03-24T05:16:26.7154008Z     Found existing installation: pip 25.3
+2026-03-24T05:16:26.7293804Z     Uninstalling pip-25.3:
+2026-03-24T05:16:26.7317472Z       Successfully uninstalled pip-25.3
+2026-03-24T05:16:27.1830499Z Successfully installed pip-26.0.1
+2026-03-24T05:16:27.6369029Z Collecting pre-commit
+2026-03-24T05:16:27.6375344Z   Using cached pre_commit-4.5.1-py2.py3-none-any.whl.metadata (1.2 kB)
+2026-03-24T05:16:27.6429176Z Collecting cfgv>=2.0.0 (from pre-commit)
+2026-03-24T05:16:27.6434698Z   Using cached cfgv-3.5.0-py2.py3-none-any.whl.metadata (8.9 kB)
+2026-03-24T05:16:27.6580643Z Collecting identify>=1.0.0 (from pre-commit)
+2026-03-24T05:16:27.6586190Z   Using cached identify-2.6.18-py2.py3-none-any.whl.metadata (4.4 kB)
+2026-03-24T05:16:27.6638822Z Collecting nodeenv>=0.11.1 (from pre-commit)
+2026-03-24T05:16:27.6644141Z   Using cached nodeenv-1.10.0-py2.py3-none-any.whl.metadata (24 kB)
+2026-03-24T05:16:27.6791772Z Collecting pyyaml>=5.1 (from pre-commit)
+2026-03-24T05:16:27.6797988Z   Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+2026-03-24T05:16:27.6931330Z Collecting virtualenv>=20.10.0 (from pre-commit)
+2026-03-24T05:16:27.6936903Z   Using cached virtualenv-21.2.0-py3-none-any.whl.metadata (3.5 kB)
+2026-03-24T05:16:27.6988040Z Collecting distlib<1,>=0.3.7 (from virtualenv>=20.10.0->pre-commit)
+2026-03-24T05:16:27.6993383Z   Using cached distlib-0.4.0-py2.py3-none-any.whl.metadata (5.2 kB)
+2026-03-24T05:16:27.7138801Z Collecting filelock<4,>=3.24.2 (from virtualenv>=20.10.0->pre-commit)
+2026-03-24T05:16:27.7144355Z   Using cached filelock-3.25.2-py3-none-any.whl.metadata (2.0 kB)
+2026-03-24T05:16:27.7206231Z Collecting platformdirs<5,>=3.9.1 (from virtualenv>=20.10.0->pre-commit)
+2026-03-24T05:16:27.7211534Z   Using cached platformdirs-4.9.4-py3-none-any.whl.metadata (4.7 kB)
+2026-03-24T05:16:27.7258574Z Collecting python-discovery>=1 (from virtualenv>=20.10.0->pre-commit)
+2026-03-24T05:16:27.7263738Z   Using cached python_discovery-1.2.0-py3-none-any.whl.metadata (5.4 kB)
+2026-03-24T05:16:27.7295632Z Using cached pre_commit-4.5.1-py2.py3-none-any.whl (226 kB)
+2026-03-24T05:16:27.7301304Z Using cached cfgv-3.5.0-py2.py3-none-any.whl (7.4 kB)
+2026-03-24T05:16:27.7306223Z Using cached identify-2.6.18-py2.py3-none-any.whl (99 kB)
+2026-03-24T05:16:27.7311090Z Using cached nodeenv-1.10.0-py2.py3-none-any.whl (23 kB)
+2026-03-24T05:16:27.7316247Z Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+2026-03-24T05:16:27.7323219Z Using cached virtualenv-21.2.0-py3-none-any.whl (5.8 MB)
+2026-03-24T05:16:27.7346355Z Using cached distlib-0.4.0-py2.py3-none-any.whl (469 kB)
+2026-03-24T05:16:27.7352439Z Using cached filelock-3.25.2-py3-none-any.whl (26 kB)
+2026-03-24T05:16:27.7357205Z Using cached platformdirs-4.9.4-py3-none-any.whl (21 kB)
+2026-03-24T05:16:27.7361629Z Using cached python_discovery-1.2.0-py3-none-any.whl (31 kB)
+2026-03-24T05:16:27.7503415Z Installing collected packages: distlib, pyyaml, platformdirs, nodeenv, identify, filelock, cfgv, python-discovery, virtualenv, pre-commit
+2026-03-24T05:16:27.9616250Z 
+2026-03-24T05:16:27.9624015Z Successfully installed cfgv-3.5.0 distlib-0.4.0 filelock-3.25.2 identify-2.6.18 nodeenv-1.10.0 platformdirs-4.9.4 pre-commit-4.5.1 python-discovery-1.2.0 pyyaml-6.0.3 virtualenv-21.2.0
+2026-03-24T05:16:27.9929250Z ##[group]Run pre-commit run --all-files detect-private-key
+2026-03-24T05:16:27.9929460Z [36;1mpre-commit run --all-files detect-private-key[0m
+2026-03-24T05:16:27.9944815Z shell: /usr/bin/bash -e {0}
+2026-03-24T05:16:27.9944924Z env:
+2026-03-24T05:16:27.9945023Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:27.9945150Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:27.9945299Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.12/x64
+2026-03-24T05:16:27.9945481Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.12/x64/lib/pkgconfig
+2026-03-24T05:16:27.9945668Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.12/x64
+2026-03-24T05:16:27.9945831Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.12/x64
+2026-03-24T05:16:27.9945992Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.12/x64
+2026-03-24T05:16:27.9946160Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.12/x64/lib
+2026-03-24T05:16:27.9946296Z ##[endgroup]
+2026-03-24T05:16:28.9809570Z detect private key.......................................................Passed
+2026-03-24T05:16:28.9962601Z ##[group]Run set -euo pipefail
+2026-03-24T05:16:28.9962779Z [36;1mset -euo pipefail[0m
+2026-03-24T05:16:28.9962887Z [36;1m[0m
+2026-03-24T05:16:28.9963043Z [36;1mif [ -z "${BASE_SHA:-}" ] || [ "${BASE_SHA}" = "0000000000000000000000000000000000000000" ]; then[0m
+2026-03-24T05:16:28.9963263Z [36;1m  echo "No usable base SHA detected; skipping zizmor."[0m
+2026-03-24T05:16:28.9963401Z [36;1m  exit 0[0m
+2026-03-24T05:16:28.9963490Z [36;1mfi[0m
+2026-03-24T05:16:28.9963568Z [36;1m[0m
+2026-03-24T05:16:28.9963690Z [36;1mif ! git cat-file -e "${BASE_SHA}^{commit}" 2>/dev/null; then[0m
+2026-03-24T05:16:28.9963882Z [36;1m  echo "Base SHA ${BASE_SHA} is unavailable; skipping zizmor."[0m
+2026-03-24T05:16:28.9964030Z [36;1m  exit 0[0m
+2026-03-24T05:16:28.9964154Z [36;1mfi[0m
+2026-03-24T05:16:28.9964228Z [36;1m[0m
+2026-03-24T05:16:28.9964320Z [36;1mmapfile -t workflow_files < <([0m
+2026-03-24T05:16:28.9964656Z [36;1m  git diff --name-only "${BASE_SHA}" HEAD -- '.github/workflows/*.yml' '.github/workflows/*.yaml'[0m
+2026-03-24T05:16:28.9964850Z [36;1m)[0m
+2026-03-24T05:16:28.9964951Z [36;1mif [ "${#workflow_files[@]}" -eq 0 ]; then[0m
+2026-03-24T05:16:28.9965111Z [36;1m  echo "No workflow changes detected; skipping zizmor."[0m
+2026-03-24T05:16:28.9965251Z [36;1m  exit 0[0m
+2026-03-24T05:16:28.9965334Z [36;1mfi[0m
+2026-03-24T05:16:28.9965408Z [36;1m[0m
+2026-03-24T05:16:28.9965535Z [36;1mprintf 'Auditing workflow files:\n%s\n' "${workflow_files[@]}"[0m
+2026-03-24T05:16:28.9965725Z [36;1mpre-commit run zizmor --files "${workflow_files[@]}"[0m
+2026-03-24T05:16:28.9980591Z shell: /usr/bin/bash -e {0}
+2026-03-24T05:16:28.9980702Z env:
+2026-03-24T05:16:28.9980796Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:28.9980927Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:28.9981076Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.12/x64
+2026-03-24T05:16:28.9981269Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.12/x64/lib/pkgconfig
+2026-03-24T05:16:28.9981465Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.12/x64
+2026-03-24T05:16:28.9981629Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.12/x64
+2026-03-24T05:16:28.9981794Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.12/x64
+2026-03-24T05:16:28.9981962Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.12/x64/lib
+2026-03-24T05:16:28.9982124Z   BASE_SHA: 5c9e4cd30a1ee9189f5f7d9d6dfa75b9a3a98ad8
+2026-03-24T05:16:28.9982256Z ##[endgroup]
+2026-03-24T05:16:29.0026822Z No workflow changes detected; skipping zizmor.
+2026-03-24T05:16:29.0044904Z ##[group]Run pre-commit run --all-files pnpm-audit-prod
+2026-03-24T05:16:29.0045220Z [36;1mpre-commit run --all-files pnpm-audit-prod[0m
+2026-03-24T05:16:29.0055743Z shell: /usr/bin/bash -e {0}
+2026-03-24T05:16:29.0055863Z env:
+2026-03-24T05:16:29.0055957Z   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+2026-03-24T05:16:29.0056081Z   GITHUB_REPO_NAME: openclaw/openclaw
+2026-03-24T05:16:29.0056237Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.12/x64
+2026-03-24T05:16:29.0056450Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.12/x64/lib/pkgconfig
+2026-03-24T05:16:29.0056684Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.12/x64
+2026-03-24T05:16:29.0056853Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.12/x64
+2026-03-24T05:16:29.0057034Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.12/x64
+2026-03-24T05:16:29.0057208Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.12/x64/lib
+2026-03-24T05:16:29.0057352Z ##[endgroup]
+2026-03-24T05:16:30.6295012Z pnpm-audit-prod..........................................................Failed
+2026-03-24T05:16:30.6295285Z - hook id: pnpm-audit-prod
+2026-03-24T05:16:30.6295398Z - exit code: 1
+2026-03-24T05:16:30.6295463Z 
+2026-03-24T05:16:30.6295874Z ┌─────────────────────┬────────────────────────────────────────────────────────┐
+2026-03-24T05:16:30.6296164Z │ critical            │ simple-git has blockUnsafeOperationsPlugin bypass via  │
+2026-03-24T05:16:30.6296835Z │                     │ case-insensitive protocol.allow config key enables RCE │
+2026-03-24T05:16:30.6297102Z ├─────────────────────┼────────────────────────────────────────────────────────┤
+2026-03-24T05:16:30.6297339Z │ Package             │ simple-git                                             │
+2026-03-24T05:16:30.6297597Z ├─────────────────────┼────────────────────────────────────────────────────────┤
+2026-03-24T05:16:30.6297860Z │ Vulnerable versions │ >=3.15.0 <3.32.3                                       │
+2026-03-24T05:16:30.6298135Z ├─────────────────────┼────────────────────────────────────────────────────────┤
+2026-03-24T05:16:30.6298374Z │ Patched versions    │ >=3.32.3                                               │
+2026-03-24T05:16:30.6298631Z ├─────────────────────┼────────────────────────────────────────────────────────┤
+2026-03-24T05:16:30.6298868Z │ Paths               │ .>node-llama-cpp>simple-git                            │
+2026-03-24T05:16:30.6299138Z ├─────────────────────┼────────────────────────────────────────────────────────┤
+2026-03-24T05:16:30.6299407Z │ More info           │ https://github.com/advisories/GHSA-r275-fr43-pm7q      │
+2026-03-24T05:16:30.6299676Z └─────────────────────┴────────────────────────────────────────────────────────┘
+2026-03-24T05:16:30.6299925Z ┌─────────────────────┬────────────────────────────────────────────────────────┐
+2026-03-24T05:16:30.6300170Z │ high                │ music-metadata has an infinite loop vulnerability in   │
+2026-03-24T05:16:30.6300581Z │                     │ ASF parser                                             │
+2026-03-24T05:16:30.6300828Z ├─────────────────────┼────────────────────────────────────────────────────────┤
+2026-03-24T05:16:30.6301067Z │ Package             │ music-metadata                                         │
+2026-03-24T05:16:30.6301346Z ├─────────────────────┼────────────────────────────────────────────────────────┤
+2026-03-24T05:16:30.6301600Z │ Vulnerable versions │ <=11.12.1                                              │
+2026-03-24T05:16:30.6301857Z ├─────────────────────┼────────────────────────────────────────────────────────┤
+2026-03-24T05:16:30.6302095Z │ Patched versions    │ >=11.12.3                                              │
+2026-03-24T05:16:30.6302353Z ├─────────────────────┼────────────────────────────────────────────────────────┤
+2026-03-24T05:16:30.6302594Z │ Paths               │ extensions__matrix>music-metadata                      │
+2026-03-24T05:16:30.6302856Z ├─────────────────────┼────────────────────────────────────────────────────────┤
+2026-03-24T05:16:30.6303122Z │ More info           │ https://github.com/advisories/GHSA-v6c2-xwv6-8xf7      │
+2026-03-24T05:16:30.6303385Z └─────────────────────┴────────────────────────────────────────────────────────┘
+2026-03-24T05:16:30.6303546Z 2 vulnerabilities found
+2026-03-24T05:16:30.6303664Z Severity: 1 high | 1 critical
+2026-03-24T05:16:30.6303741Z 
+2026-03-24T05:16:30.6446286Z ##[error]Process completed with exit code 1.
+2026-03-24T05:16:30.6499277Z Post job cleanup.
+2026-03-24T05:16:30.6541510Z Post job cleanup.
+2026-03-24T05:16:30.6913719Z [command]/usr/bin/git version
+2026-03-24T05:16:30.6961924Z git version 2.52.0
+2026-03-24T05:16:30.6978303Z Temporarily overriding HOME='/home/runner/_work/_temp/8c07641e-215d-4fc9-bddb-01547c9ec079' before making global git config changes
+2026-03-24T05:16:30.6978772Z Adding repository directory to the temporary git global config as a safe directory
+2026-03-24T05:16:30.6981369Z [command]/usr/bin/git config --global --add safe.directory /home/runner/_work/openclaw/openclaw
+2026-03-24T05:16:30.6997159Z Removing SSH command configuration
+2026-03-24T05:16:30.7000034Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-03-24T05:16:30.7014639Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-03-24T05:16:30.7114468Z Removing HTTP extra header
+2026-03-24T05:16:30.7118503Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-03-24T05:16:30.7131793Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-03-24T05:16:30.7221694Z Removing includeIf entries pointing to credentials config files
+2026-03-24T05:16:30.7224694Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-03-24T05:16:30.7232899Z includeif.gitdir:/home/runner/_work/openclaw/openclaw/.git.path
+2026-03-24T05:16:30.7233176Z includeif.gitdir:/home/runner/_work/openclaw/openclaw/.git/worktrees/*.path
+2026-03-24T05:16:30.7233394Z includeif.gitdir:/github/workspace/.git.path
+2026-03-24T05:16:30.7233578Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-03-24T05:16:30.7236950Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/_work/openclaw/openclaw/.git.path
+2026-03-24T05:16:30.7245339Z /home/runner/_work/_temp/git-credentials-32d90f3b-f332-4324-b97d-a8ba2341eb2b.config
+2026-03-24T05:16:30.7249738Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/_work/openclaw/openclaw/.git.path /home/runner/_work/_temp/git-credentials-32d90f3b-f332-4324-b97d-a8ba2341eb2b.config
+2026-03-24T05:16:30.7263487Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/_work/openclaw/openclaw/.git/worktrees/*.path
+2026-03-24T05:16:30.7271816Z /home/runner/_work/_temp/git-credentials-32d90f3b-f332-4324-b97d-a8ba2341eb2b.config
+2026-03-24T05:16:30.7276685Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/_work/openclaw/openclaw/.git/worktrees/*.path /home/runner/_work/_temp/git-credentials-32d90f3b-f332-4324-b97d-a8ba2341eb2b.config
+2026-03-24T05:16:30.7290167Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-03-24T05:16:30.7298335Z /github/runner_temp/git-credentials-32d90f3b-f332-4324-b97d-a8ba2341eb2b.config
+2026-03-24T05:16:30.7303033Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-32d90f3b-f332-4324-b97d-a8ba2341eb2b.config
+2026-03-24T05:16:30.7315425Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-03-24T05:16:30.7325311Z /github/runner_temp/git-credentials-32d90f3b-f332-4324-b97d-a8ba2341eb2b.config
+2026-03-24T05:16:30.7329794Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-32d90f3b-f332-4324-b97d-a8ba2341eb2b.config
+2026-03-24T05:16:30.7343477Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-03-24T05:16:30.7432286Z Removing credentials config '/home/runner/_work/_temp/git-credentials-32d90f3b-f332-4324-b97d-a8ba2341eb2b.config'
+2026-03-24T05:16:30.7478603Z A job completed hook has been configured by the self-hosted runner administrator
+2026-03-24T05:16:30.7497896Z ##[group]Run '/job_completed.sh'
+2026-03-24T05:16:30.7507549Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-03-24T05:16:30.7507706Z ##[endgroup]
+2026-03-24T05:16:30.7600772Z Docker container caching not enabled, skipping hash computation.
+2026-03-24T05:16:30.7654893Z No active SSH sessions detected. Proceeding with shutdown immediately.
+2026-03-24T05:16:30.7686883Z Evaluate and set job outputs
+2026-03-24T05:16:30.7690983Z Set output 'docs_only'
+2026-03-24T05:16:30.7691792Z Set output 'docs_changed'
+2026-03-24T05:16:30.7692104Z Set output 'run_node'
+2026-03-24T05:16:30.7692227Z Set output 'run_macos'
+2026-03-24T05:16:30.7692352Z Set output 'run_android'
+2026-03-24T05:16:30.7692485Z Set output 'run_skills_python'
+2026-03-24T05:16:30.7692629Z Set output 'run_windows'
+2026-03-24T05:16:30.7692781Z Set output 'has_changed_extensions'
+2026-03-24T05:16:30.7692943Z Set output 'changed_extensions_matrix'
+2026-03-24T05:16:30.7693219Z Cleaning up orphan processes
