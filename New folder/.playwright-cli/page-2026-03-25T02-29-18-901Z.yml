@@ -1,0 +1,591 @@
+- generic [active] [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e4]:
+    - banner [ref=e12]:
+      - link "Skip to page content" [ref=e13] [cursor=pointer]:
+        - /url: javascript:void(0)
+      - generic [ref=e14]:
+        - navigation [ref=e16]:
+          - generic [ref=e17]:
+            - link "Skip to main content" [ref=e18] [cursor=pointer]:
+              - /url: javascript:void(0);
+            - link "Go to homepage" [ref=e19] [cursor=pointer]:
+              - /url: http://www.dfpi.ca.gov/
+              - img "Customer Service" [ref=e20]
+            - link "Go to homepage" [ref=e22] [cursor=pointer]:
+              - /url: http://www.dfpi.ca.gov/
+              - generic [ref=e23]: Online Services
+          - list [ref=e26]:
+            - listitem
+            - list [ref=e27]:
+              - listitem [ref=e28]:
+                - link "Help" [ref=e29] [cursor=pointer]:
+                  - /url: /csp?id=ssp_help
+              - listitem [ref=e30]:
+                - link "Complaints Sign In" [ref=e31] [cursor=pointer]:
+                  - /url: /csp?id=register_login
+        - list "Header" [ref=e34]
+    - main [ref=e35]:
+      - heading "Submit Complaint" [level=1] [ref=e36]
+      - generic [ref=e41]:
+        - generic:
+          - generic:
+            - generic [ref=e572]:
+              - generic [ref=e573]: Submit a Complaint
+              - paragraph
+              - generic [ref=e575]: "Note: In order to save your complaint data, please use the navigation buttons (Previous, Next) located near the bottom of each page. Using your browser back and forward buttons will refresh your screen and erase complaint data that you've entered."
+              - generic [ref=e576]:
+                - generic [ref=e577]:
+                  - img [ref=e578]: 
+                  - text: How did you hear about us?
+                - generic [ref=e580]:
+                  - generic [ref=e582]:
+                    - radio "News or media reports" [disabled] [ref=e583]
+                    - text: News or media reports
+                  - generic [ref=e585]:
+                    - radio "Radio" [disabled] [ref=e586]
+                    - text: Radio
+                  - generic [ref=e588]:
+                    - radio "Billboards" [disabled] [ref=e589]
+                    - text: Billboards
+                  - generic [ref=e591]:
+                    - radio "Social media" [disabled] [ref=e592]
+                    - text: Social media
+                  - generic [ref=e594]:
+                    - radio "Other" [checked] [disabled] [ref=e595]
+                    - text: Other
+                - generic [ref=e598]:
+                  - generic [ref=e599]: Specify other
+                  - textbox "Specify other" [disabled] [ref=e600]
+              - generic [ref=e601]:
+                - generic [ref=e602]:
+                  - img [ref=e603]: 
+                  - text: Does your complaint involve Crypto or digital asset?
+                - generic [ref=e605]:
+                  - generic [ref=e607]:
+                    - radio "Yes" [disabled] [ref=e608]
+                    - text: "Yes"
+                  - generic [ref=e610]:
+                    - radio "No" [checked] [disabled] [ref=e611]
+                    - text: "No"
+              - generic [ref=e612]:
+                - generic [ref=e613]:
+                  - img [ref=e614]: 
+                  - text: Are you a current or former employee looking to report potential wrongdoing about your employer?
+                - generic [ref=e616]:
+                  - generic [ref=e618]:
+                    - radio "Yes" [disabled] [ref=e619]
+                    - text: "Yes"
+                  - generic [ref=e621]:
+                    - radio "No" [checked] [disabled] [ref=e622]
+                    - text: "No"
+              - generic [ref=e623]:
+                - paragraph [ref=e625]:
+                  - img [ref=e626]: 
+                  - text: Legal Consent
+                - generic [ref=e627]:
+                  - paragraph [ref=e628]: By submitting this complaint, you certify the information provided is true and correct to the best of your knowledge and consent to allow the subject of the complaint and its affiliates to disclose to the Department any information the Department deems relevant to your complaint, including your transactions, accounts, and other experiences with them. If you are submitting this complaint on behalf of another person, you certify under penalty of perjury you are authorized to submit this complaint on that person's behalf.
+                  - paragraph [ref=e629]: The Department uses consumer complaint information to investigate potential violations of law. In general, consumer complaints are considered to have been received by the Department in confidence. However, Civil Code section 1798.24 allows the Department to disclose your personal information with another person or governmental organization to the extent needed to obtain information for our investigation of a failure to comply with our laws. It also allows the Department to disclose your information with other self-regulatory organizations and government agencies, including federal and state financial services regulators and law enforcement agencies, if certain conditions are met and subject to limitations.
+                  - paragraph [ref=e630]: "In addition, you may consent to the Department's disclosure of your personal information for reasons other than those set forth in Civil Code section 1798.24 (for example, to allow the Department to forward your personal information to the subject of your complaint when an investigation by the Department is not needed). If you consent to the Department's disclosure of your personal information for these other reasons, please mark the box below:"
+                  - paragraph [ref=e631]: I consent to the Department's disclosure of my personal information (including my name and financial matters) with the subject of my complaint, with other governmental or quasi-governmental agencies, and with self-regulatory organizations, to the extent the disclosure is needed to help resolve my complaint. This consent is valid for two years from the date my complaint is received by the Department. After those two years have elapsed, the Department will need to obtain a new consent from me to disclose my personal information for reasons other than those set forth in Civil Code section 1798.24
+                - generic [ref=e632]:
+                  - generic [ref=e633]: Select an option below to proceed with submitting a complaint.
+                  - paragraph [ref=e634]:
+                    - combobox "Select an option below to proceed with submitting a complaint." [disabled] [ref=e635]:
+                      - option "-select-"
+                      - option "I consent" [selected]
+                      - option "I do not consent"
+              - paragraph [ref=e637]
+            - generic [ref=e121]:
+              - generic [ref=e638]:
+                - generic [ref=e640]:
+                  - generic [ref=e643]:
+                    - img [ref=e644]: 
+                    - text: What is this complaint about?
+                    - paragraph [ref=e645]: (Choose the product or service that best matches your complaint)
+                  - generic [ref=e646]:
+                    - paragraph
+                  - generic [ref=e648]:
+                    - generic [ref=e650]:
+                      - radio "Broker-Dealers and Investment Advisers" [disabled] [ref=e652]
+                      - generic [ref=e654]: Broker-Dealers and Investment Advisers
+                    - generic [ref=e656]:
+                      - radio "Checking or Savings" [disabled] [ref=e658]
+                      - generic [ref=e660]: Checking or Savings
+                    - generic [ref=e662]:
+                      - radio "Credit Card or Prepaid Cards" [disabled] [ref=e664]
+                      - generic [ref=e666]: Credit Card or Prepaid Cards
+                    - generic [ref=e668]:
+                      - radio "Credit Reporting, Credit Repair Services or Other Personal Consumer Reports" [disabled] [ref=e670]
+                      - generic [ref=e672]: Credit Reporting, Credit Repair Services or Other Personal Consumer Reports
+                    - generic [ref=e674]:
+                      - radio "Crypto-related Financial Products and Services" [disabled] [ref=e676]
+                      - generic [ref=e678]: Crypto-related Financial Products and Services
+                    - generic [ref=e680]:
+                      - radio "Debt Collection" [disabled] [ref=e682]
+                      - generic [ref=e684]: Debt Collection
+                    - generic [ref=e686]:
+                      - radio "Escrow Agent" [disabled] [ref=e688]
+                      - generic [ref=e690]: Escrow Agent
+                    - generic [ref=e692]:
+                      - radio "Franchises" [disabled] [ref=e694]
+                      - generic [ref=e696]: Franchises
+                    - generic [ref=e698]:
+                      - radio "Money Transmitters and Peer to Peer Payment Services" [disabled] [ref=e700]
+                      - generic [ref=e702]: Money Transmitters and Peer to Peer Payment Services
+                    - generic [ref=e704]:
+                      - radio "Mortgages" [disabled] [ref=e706]
+                      - generic [ref=e708]: Mortgages
+                    - generic [ref=e710]:
+                      - radio "Payday Loans, Title Loans or Personal Loans" [disabled] [ref=e712]
+                      - generic [ref=e714]: Payday Loans, Title Loans or Personal Loans
+                    - generic [ref=e716]:
+                      - radio "Property Assessed Clean Energy (PACE)" [disabled] [ref=e718]
+                      - generic [ref=e720]: Property Assessed Clean Energy (PACE)
+                    - generic [ref=e722]:
+                      - radio "Securities" [disabled] [ref=e724]
+                      - generic [ref=e726]: Securities
+                    - generic [ref=e728]:
+                      - radio "Student Loans" [disabled] [ref=e730]
+                      - generic [ref=e732]: Student Loans
+                    - generic [ref=e734]:
+                      - radio "Vehicle Loans or Leases" [checked] [disabled] [ref=e736]
+                      - generic [ref=e738]: Vehicle Loans or Leases
+                    - generic [ref=e740]:
+                      - radio "Other" [disabled] [ref=e742]
+                      - generic [ref=e744]: Other
+                - generic [ref=e747]:
+                  - generic:
+                    - generic [ref=e749]:
+                      - generic [ref=e750]:
+                        - generic [ref=e751]:  Do you wish to file a complaint regarding a loan or lease?
+                        - paragraph [ref=e752]: (Most of the vehicle loan and lease complaints we receive are about one of the following tops. Select the one that best describes your complaint. You will have the chance to explain your complaint in detail in the next step.)
+                      - generic [ref=e754]:
+                        - generic [ref=e756]:
+                          - radio "Loan" [checked] [disabled] [ref=e758]
+                          - generic [ref=e760]: Loan
+                        - generic [ref=e762]:
+                          - radio "Lease" [disabled] [ref=e764]
+                          - generic [ref=e766]: Lease
+                    - generic [ref=e768]:
+                      - generic [ref=e770]:  Was the loan for a new or used vehicle?
+                      - generic [ref=e772]:
+                        - generic [ref=e774]:
+                          - radio "New" [disabled] [ref=e776]
+                          - generic [ref=e778]: New
+                        - generic [ref=e780]:
+                          - radio "Used" [checked] [disabled] [ref=e782]
+                          - generic [ref=e784]: Used
+                    - generic [ref=e786]:
+                      - generic [ref=e788]:  What type of problem are you having?
+                      - generic [ref=e790]:
+                        - generic [ref=e792]:
+                          - radio "Getting a loan or lease (denied loan, confusing advertising or marketing, high pressure sales tactics or fraudulent loan)" [disabled] [ref=e794]
+                          - generic [ref=e795]:
+                            - generic [ref=e796]: Getting a loan or lease
+                            - generic [ref=e797]: (denied loan, confusing advertising or marketing, high pressure sales tactics or fraudulent loan)
+                        - generic [ref=e799]:
+                          - radio "Managing a loan or lease (billing, extra fees, transferring loan or additional products related to the loan)" [disabled] [ref=e801]
+                          - generic [ref=e802]:
+                            - generic [ref=e803]: Managing a loan or lease
+                            - generic [ref=e804]: (billing, extra fees, transferring loan or additional products related to the loan)
+                        - generic [ref=e806]:
+                          - radio "Struggling to pay loan (payment plan, repossession or bankruptcy)" [checked] [disabled] [ref=e808]
+                          - generic [ref=e809]:
+                            - generic [ref=e810]: Struggling to pay loan
+                            - generic [ref=e811]: (payment plan, repossession or bankruptcy)
+                        - generic [ref=e813]:
+                          - radio "Problems at end of the loan (title, refinancing or extending a lease)" [disabled] [ref=e815]
+                          - generic [ref=e816]:
+                            - generic [ref=e817]: Problems at end of the loan
+                            - generic [ref=e818]: (title, refinancing or extending a lease)
+                        - generic [ref=e820]:
+                          - radio "Problem with credit report or credit score" [disabled] [ref=e822]
+                          - generic [ref=e824]: Problem with credit report or credit score
+                    - generic [ref=e826]:
+                      - generic [ref=e828]:  Which best describes your problem?
+                      - generic [ref=e830]:
+                        - generic [ref=e832]:
+                          - radio "Denied request to lower payments (due to financial hardship, military deployment or other qualifying circumstances)" [disabled] [ref=e834]
+                          - generic [ref=e835]:
+                            - generic [ref=e836]: Denied request to lower payments
+                            - generic [ref=e837]: (due to financial hardship, military deployment or other qualifying circumstances)
+                        - generic [ref=e839]:
+                          - radio "Lender trying to repossess or disable vehicle" [disabled] [ref=e841]
+                          - generic [ref=e843]: Lender trying to repossess or disable vehicle
+                        - generic [ref=e845]:
+                          - radio "Problem after you declared or threatened to declare bankruptcy" [disabled] [ref=e847]
+                          - generic [ref=e849]: Problem after you declared or threatened to declare bankruptcy
+                        - generic [ref=e851]:
+                          - radio "Loan balance remaining after the vehicle is repossessed and sold" [disabled] [ref=e853]
+                          - generic [ref=e855]: Loan balance remaining after the vehicle is repossessed and sold
+                    - generic [ref=e857]:
+                      - generic [ref=e859]:  Have you already tried to fix this problem with the company?
+                      - generic [ref=e861]:
+                        - generic [ref=e863]:
+                          - radio "Yes" [disabled] [ref=e865]
+                          - generic [ref=e867]: "Yes"
+                        - generic [ref=e869]:
+                          - radio "No" [disabled] [ref=e871]
+                          - generic [ref=e873]: "No"
+                - generic [ref=e878]:
+                  - generic [ref=e880]:
+                    - generic [ref=e881]:
+                      - generic [ref=e882]:
+                        - img [ref=e883]: 
+                        - text: What happened?
+                      - generic [ref=e884]: In addition to the information already provided, please describe in detail what happened, and we will send your comments to the companies involved.
+                      - list [ref=e885]:
+                        - listitem [ref=e886]: Include dates, amounts and actions that were taken by you or the company.
+                        - listitem [ref=e887]: Do not include personal information such as your name, account number, address, Social Security number, etc. We may ask for some of this information later to help the company identify you and your account.
+                    - textbox "What happened? In addition to the information already provided, please describe in detail what happened, and we will send your comments to the companies involved. Include dates, amounts and actions that were taken by you or the company. Do not include personal information such as your name, account number, address, Social Security number, etc. We may ask for some of this information later to help the company identify you and your account." [disabled] [ref=e888]: This complaint concerns a used 2017 Honda Civic sold and financed through Karplus Auto Sales / Karplus Warehouse, with servicing or collection later involving On Time Financing and Green Road Finance. At the time of sale in July 2020, the contract terms were not meaningfully explained before signing. Optional products were allegedly presented as required, including a tracking device, window etching, and extended warranty. There were also oral statements that no prepayment penalty would apply.
+                  - generic [ref=e891]:
+                    - generic [ref=e892]: What would be a fair resolution?
+                    - textbox "What would be a fair resolution?" [disabled] [ref=e893]: A fair resolution would include a complete payment ledger, itemized explanation of all fees and insurance charges, copies of all signed add-on and tracking disclosures, correction of inaccurate account reporting, review of the repossession charges and damage, and refund or adjustment of any unauthorized or inaccurately disclosed charges.
+                - generic [ref=e896]:
+                  - generic [ref=e897]:
+                    - generic [ref=e898]: Please do not provide personal identifying information such as a social security number in your document.
+                    - generic [ref=e900]:
+                      - heading [level=5]
+                  - generic [ref=e902]:
+                    - generic [ref=e903]:
+                      - generic [ref=e905]:
+                        - img [ref=e906]: 
+                        - text: Are you emailing or mailing documentation?
+                      - generic [ref=e907]:
+                        - generic [ref=e909]:
+                          - radio "Yes" [disabled] [ref=e910]
+                          - text: "Yes"
+                        - generic [ref=e912]:
+                          - radio "No" [checked] [disabled] [ref=e913]
+                          - text: "No"
+                    - generic [ref=e916]:
+                      - paragraph [ref=e917]: How to Submit Documents
+                      - paragraph [ref=e918]:
+                        - text: Include the complaint number with your submission. (The complaint number will be provided upon submission of your complaint).
+                        - text: Email or mail supporting documents upon complaint submission to avoid processing delays.
+                      - paragraph [ref=e919]:
+                        - text: "Email:"
+                        - link "crc@dfpi.ca.gov" [ref=e920] [cursor=pointer]:
+                          - /url: mailto:crc@dfpi.ca.gov
+                        - text: Email attachments are limited to 100MB
+                      - paragraph [ref=e921]:
+                        - text: "Mail: Attn: Consumer Services Office"
+                        - text: Department of Financial Protection and Innovation
+                        - text: 651 Bannon Street, Suite 300
+                        - text: Sacramento, CA 95811
+                - generic [ref=e925]:
+                  - generic [ref=e927]:
+                    - text: What organization or individual is the complaint about?
+                    - text: (If you consented, we may forward your entire complaint to the organization and request they respond promptly.)
+                  - generic [ref=e928]:
+                    - generic [ref=e929]:
+                      - img [ref=e930]: 
+                      - text: Organization Name
+                    - textbox "Organization Name" [disabled] [ref=e931]: Green Road Finance Inc.
+                  - generic [ref=e932]:
+                    - generic [ref=e933]: Organization Address
+                    - textbox "Organization Address" [disabled] [ref=e934]: 1314 West Glenoaks Blvd Suite 100
+                  - generic [ref=e935]:
+                    - generic [ref=e936]: Organization City
+                    - textbox "Organization City" [disabled] [ref=e937]: Glendale
+                  - generic [ref=e938]:
+                    - generic [ref=e939]: Organization State
+                    - combobox "Organization State" [disabled] [ref=e940]:
+                      - option
+                      - option "Alabama"
+                      - option "Alaska"
+                      - option "Arizona"
+                      - option "Arkansas"
+                      - option "California" [selected]
+                      - option "Colorado"
+                      - option "Connecticut"
+                      - option "Delaware"
+                      - option "Florida"
+                      - option "Georgia"
+                      - option "Hawaii"
+                      - option "Idaho"
+                      - option "Illinois"
+                      - option "Indiana"
+                      - option "Iowa"
+                      - option "Kansas"
+                      - option "Kentucky"
+                      - option "Louisiana"
+                      - option "Maine"
+                      - option "Maryland"
+                      - option "Massachusetts"
+                      - option "Michigan"
+                      - option "Minnesota"
+                      - option "Mississippi"
+                      - option "Missouri"
+                      - option "Montana"
+                      - option "Nebraska"
+                      - option "Nevada"
+                      - option "New Hampshire"
+                      - option "New Jersey"
+                      - option "New Mexico"
+                      - option "New York"
+                      - option "North Carolina"
+                      - option "North Dakota"
+                      - option "Ohio"
+                      - option "Oklahoma"
+                      - option "Oregon"
+                      - option "Pennsylvania"
+                      - option "Rhode Island"
+                      - option "South Carolina"
+                      - option "South Dakota"
+                      - option "Tennessee"
+                      - option "Texas"
+                      - option "Utah"
+                      - option "Vermont"
+                      - option "Virginia"
+                      - option "Washington"
+                      - option "West Virginia"
+                      - option "Wisconsin"
+                      - option "Wyoming"
+                      - option "American Samoa"
+                      - option "District of Columbia"
+                      - option "Guam"
+                      - option "Northern Mariana Islands"
+                      - option "Puerto Rico"
+                      - option "United States Minor Outlying Islands"
+                      - option "Virgin Islands US"
+                      - option "International"
+                      - option "Other"
+                  - generic [ref=e941]:
+                    - generic [ref=e942]: Organization Zip Code
+                    - textbox "Organization Zip Code" [disabled] [ref=e943]: "91201"
+                  - generic [ref=e946]:
+                    - generic [ref=e947]: Organization Website
+                    - textbox "Organization Website" [disabled] [ref=e948]: www.greenroadfinance.com
+                  - generic [ref=e950]:
+                    - generic [ref=e951]:
+                      - text:  Individual Name
+                      - text: (Required if organization is not provided)
+                    - textbox "Individual Name (Required if organization is not provided)" [disabled] [ref=e952]
+                  - paragraph [ref=e954]: If you have the information below available, please provide if applicable.
+                  - generic [ref=e956]:
+                    - generic [ref=e957]:
+                      - text: Account Number
+                      - paragraph [ref=e958]: (This number is on your billing statement)
+                    - textbox "Account Number (This number is on your billing statement)" [disabled] [ref=e959]
+                  - generic [ref=e960]:
+                    - generic [ref=e961]:
+                      - text: Loan Number
+                      - paragraph [ref=e962]: (This number is on your loan document)
+                    - textbox "Loan Number (This number is on your loan document)" [disabled] [ref=e963]: "06323"
+                  - paragraph [ref=e966]: Do you want to include additional organizations or individuals related to this issue?
+                  - generic [ref=e968]:
+                    - radio "Yes" [disabled] [ref=e969]
+                    - text: "Yes"
+                  - generic [ref=e971]:
+                    - radio "No" [checked] [disabled] [ref=e972]
+                    - text: "No"
+                - generic [ref=e976]:
+                  - generic [ref=e980]:
+                    - img [ref=e981]: 
+                    - generic [ref=e982]: Are you filing this complaint on behalf of yourself or a third party?
+                  - generic [ref=e987]:
+                    - radio "Myself" [checked] [disabled] [ref=e989]
+                    - generic [ref=e991]: Myself
+                  - generic [ref=e994]:
+                    - generic [ref=e995]:
+                      - radio "Third Party (Includes co-owner of an account, family member, attorney, friend, etc.)" [disabled] [ref=e997]
+                      - generic [ref=e999]: Third Party
+                      - generic [ref=e1000]: (Includes co-owner of an account, family member, attorney, friend, etc.)
+                    - generic:
+                      - heading [level=5]
+                  - generic:
+                    - generic:        
+                  - generic [ref=e1001]:
+                    - paragraph [ref=e1002]: How to Submit Documents
+                    - paragraph [ref=e1003]:
+                      - text: Include the complaint number with your submission. (The complaint number will be provided upon submission of your complaint).
+                      - text: Email or mail supporting documents upon complaint submission to avoid processing delays.
+                    - paragraph [ref=e1004]:
+                      - text: "Email:"
+                      - link "crc@dfpi.ca.gov" [ref=e1005] [cursor=pointer]:
+                        - /url: mailto:crc@dfpi.ca.gov
+                      - text: Email attachments are limited to 100MB
+                    - paragraph [ref=e1006]:
+                      - text: "Mail: Attn: Consumer Services Office"
+                      - text: Department of Financial Protection and Innovation
+                      - text: 651 Bannon Street, Suite 300
+                      - text: Sacramento, CA 95811
+                  - generic [ref=e1013]:
+                    - img [ref=e1014]: 
+                    - text: Would you like to provide your contact information?
+                  - generic [ref=e1016]:
+                    - generic [ref=e1018]:
+                      - radio "Yes" [checked] [disabled] [ref=e1019]
+                      - text: "Yes"
+                    - generic [ref=e1021]:
+                      - radio "No" [disabled] [ref=e1022]
+                      - text: "No"
+                  - generic [ref=e1023]: Contact Information of Affected Party
+                  - generic [ref=e1025]:
+                    - generic [ref=e1026]:
+                      - generic [ref=e1027]: Title
+                      - combobox "Title" [disabled] [ref=e1028]:
+                        - option "Ms."
+                        - option "Miss"
+                        - option "Mrs."
+                        - option "Mr." [selected]
+                        - option "Dr."
+                    - generic [ref=e1029]:
+                      - generic [ref=e1030]:
+                        - generic [ref=e1031]: 
+                        - text: First Name
+                      - textbox " First Name" [disabled] [ref=e1032]: Mauricio
+                    - generic [ref=e1033]:
+                      - generic [ref=e1034]:
+                        - generic [ref=e1035]: 
+                        - text: Last Name
+                      - textbox " Last Name" [disabled] [ref=e1036]: Sanchez
+                    - generic [ref=e1037]:
+                      - generic [ref=e1038]:
+                        - generic [ref=e1039]: 
+                        - text: Phone Number
+                      - textbox " Phone Number" [disabled] [ref=e1040]: "8187915170"
+                    - generic [ref=e1041]:
+                      - generic [ref=e1042]:
+                        - generic [ref=e1043]: 
+                        - text: Email
+                      - textbox " Email" [disabled] [ref=e1044]: mauriciosanchez60@gmail.com
+                    - generic [ref=e1045]:
+                      - generic [ref=e1046]: Address Line 1
+                      - textbox "Address Line 1" [disabled] [ref=e1047]: 20542 Hartland Street Apt 2
+                    - generic [ref=e1048]:
+                      - generic [ref=e1049]: Address Line 2
+                      - textbox "Address Line 2" [disabled] [ref=e1050]
+                    - generic [ref=e1051]:
+                      - generic [ref=e1052]: City
+                      - textbox "City" [disabled] [ref=e1053]: Winnetka
+                    - generic [ref=e1054]:
+                      - generic [ref=e1055]: State
+                      - combobox "State" [disabled] [ref=e1056]:
+                        - option
+                        - option "Alabama"
+                        - option "Alaska"
+                        - option "Arizona"
+                        - option "Arkansas"
+                        - option "California" [selected]
+                        - option "Colorado"
+                        - option "Connecticut"
+                        - option "Delaware"
+                        - option "Florida"
+                        - option "Georgia"
+                        - option "Hawaii"
+                        - option "Idaho"
+                        - option "Illinois"
+                        - option "Indiana"
+                        - option "Iowa"
+                        - option "Kansas"
+                        - option "Kentucky"
+                        - option "Louisiana"
+                        - option "Maine"
+                        - option "Maryland"
+                        - option "Massachusetts"
+                        - option "Michigan"
+                        - option "Minnesota"
+                        - option "Mississippi"
+                        - option "Missouri"
+                        - option "Montana"
+                        - option "Nebraska"
+                        - option "Nevada"
+                        - option "New Hampshire"
+                        - option "New Jersey"
+                        - option "New Mexico"
+                        - option "New York"
+                        - option "North Carolina"
+                        - option "North Dakota"
+                        - option "Ohio"
+                        - option "Oklahoma"
+                        - option "Oregon"
+                        - option "Pennsylvania"
+                        - option "Rhode Island"
+                        - option "South Carolina"
+                        - option "South Dakota"
+                        - option "Tennessee"
+                        - option "Texas"
+                        - option "Utah"
+                        - option "Vermont"
+                        - option "Virginia"
+                        - option "Washington"
+                        - option "West Virginia"
+                        - option "Wisconsin"
+                        - option "Wyoming"
+                        - option "American Samoa"
+                        - option "District of Columbia"
+                        - option "Guam"
+                        - option "Northern Mariana Islands"
+                        - option "Puerto Rico"
+                        - option "United States Minor Outlying Islands"
+                        - option "Virgin Islands US"
+                        - option "International"
+                        - option "Other"
+                    - generic [ref=e1057]:
+                      - generic [ref=e1058]: Zip Code
+                      - textbox "Zip Code" [disabled] [ref=e1059]: "91306"
+                    - generic [ref=e1065]:
+                      - img [ref=e1066]: 
+                      - text: Have you filed this complaint with any other agency (e.g. law enforcement, state or federal department)?
+                    - generic [ref=e1068]:
+                      - generic [ref=e1070]:
+                        - radio "Yes" [checked] [disabled] [ref=e1071]
+                        - text: "Yes"
+                      - generic [ref=e1073]:
+                        - radio "No" [disabled] [ref=e1074]
+                        - text: "No"
+                    - generic [ref=e1077]:
+                      - generic [ref=e1078]: Who?
+                      - textbox "Who?" [disabled] [ref=e1079]: CFPB and DFPI
+                    - generic [ref=e1083]:
+                      - img [ref=e1084]: 
+                      - text: What is the age of the affected party?
+                    - combobox "What is the age of the affected party?" [disabled] [ref=e1088]:
+                      - option "Under 18"
+                      - option "18 - 24"
+                      - option "25 - 34"
+                      - option "35 - 44" [selected]
+                      - option "45 - 54"
+                      - option "55 - 61"
+                      - option "62+"
+                      - option "Decline to Answer"
+                    - generic [ref=e1092]:
+                      - img [ref=e1093]: 
+                      - text: Is the affected party a Service member?
+                    - generic [ref=e1095]:
+                      - generic [ref=e1097]:
+                        - radio "Yes" [disabled] [ref=e1098]
+                        - text: "Yes"
+                      - generic [ref=e1100]:
+                        - radio "No" [checked] [disabled] [ref=e1101]
+                        - text: "No"
+              - generic [ref=e242]:
+                - button "Back" [ref=e1105] [cursor=pointer]
+                - button "Print" [ref=e1106] [cursor=pointer]
+                - button "Submit" [ref=e568] [cursor=pointer]
+    - contentinfo [ref=e106]:
+      - contentinfo [ref=e109]:
+        - paragraph [ref=e115]:
+          - text: View our
+          - link "Privacy Policy" [ref=e116] [cursor=pointer]:
+            - /url: https://dfpi.ca.gov/privacy-policy/
+          - text: and
+          - link "Conditions of Use" [ref=e117] [cursor=pointer]:
+            - /url: https://dfpi.ca.gov/conditions-of-use/
+  - iframe [ref=e120]:
+    - generic [ref=f2e2]:
+      - generic [ref=f2e5]:
+        - link "Privacy" [ref=f2e6] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en/policies/privacy/
+        - text: "-"
+        - link "Terms" [ref=f2e7] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en/policies/terms/
+      - generic [ref=f2e8]:
+        - generic [ref=f2e9]:
+          - text: protected by
+          - strong [ref=f2e10]: reCAPTCHA
+        - generic [ref=f2e11]: "-"

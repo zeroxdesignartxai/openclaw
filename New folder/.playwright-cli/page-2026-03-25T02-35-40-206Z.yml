@@ -1,0 +1,71 @@
+- generic [active] [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e4]:
+    - banner [ref=e12]:
+      - link "Skip to page content" [ref=e13] [cursor=pointer]:
+        - /url: javascript:void(0)
+      - generic [ref=e14]:
+        - navigation [ref=e16]:
+          - generic [ref=e17]:
+            - link "Skip to main content" [ref=e18] [cursor=pointer]:
+              - /url: javascript:void(0);
+            - link "Go to homepage" [ref=e19] [cursor=pointer]:
+              - /url: http://www.dfpi.ca.gov/
+              - img "Customer Service" [ref=e20]
+            - link "Go to homepage" [ref=e22] [cursor=pointer]:
+              - /url: http://www.dfpi.ca.gov/
+              - generic [ref=e23]: Online Services
+          - list [ref=e26]:
+            - listitem
+            - list [ref=e27]:
+              - listitem [ref=e28]:
+                - link "Help" [ref=e29] [cursor=pointer]:
+                  - /url: /csp?id=ssp_help
+              - listitem [ref=e30]:
+                - link "Complaints Sign In" [ref=e31] [cursor=pointer]:
+                  - /url: /csp?id=register_login
+        - list "Header" [ref=e34]
+    - main [ref=e35]:
+      - heading "Submit Complaint" [level=1] [ref=e36]
+      - generic [ref=e121]:
+        - generic [ref=e1107]:
+          - button "1" [ref=e1108] [cursor=pointer]
+          - button "2" [ref=e1109] [cursor=pointer]
+          - button "3" [ref=e1110] [cursor=pointer]
+          - button "4" [ref=e1111] [cursor=pointer]
+          - button "5" [ref=e1112] [cursor=pointer]
+          - button "6" [ref=e1113] [cursor=pointer]
+          - button "7" [ref=e1114] [cursor=pointer]
+        - generic [ref=e1115]:
+          - generic [ref=e1120]: Step 7 of 7
+          - text:                           
+          - generic [ref=e1125]:
+            - paragraph [ref=e1126]: Thank you for taking the time to complete your complaint information. You may review your complaint by clicking on the Review button below. By selecting Submit, your complaint will be submitted to the DFPI for processing.
+            - paragraph [ref=e1127]: If you have provided an email address, you will receive an email confirmation upon submission of the complaint.
+        - generic [ref=e242]:
+          - button "Previous" [ref=e1128] [cursor=pointer]
+          - button "Review" [ref=e1258] [cursor=pointer]
+          - button "Submit" [ref=e1259] [cursor=pointer]
+    - contentinfo [ref=e106]:
+      - contentinfo [ref=e109]:
+        - paragraph [ref=e115]:
+          - text: View our
+          - link "Privacy Policy" [ref=e116] [cursor=pointer]:
+            - /url: https://dfpi.ca.gov/privacy-policy/
+          - text: and
+          - link "Conditions of Use" [ref=e117] [cursor=pointer]:
+            - /url: https://dfpi.ca.gov/conditions-of-use/
+  - iframe [ref=e120]:
+    - generic [ref=f2e2]:
+      - generic [ref=f2e5]:
+        - link "Privacy" [ref=f2e6] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en/policies/privacy/
+        - text: "-"
+        - link "Terms" [ref=f2e7] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en/policies/terms/
+      - generic [ref=f2e8]:
+        - generic [ref=f2e9]:
+          - text: protected by
+          - strong [ref=f2e10]: reCAPTCHA
+        - generic [ref=f2e11]: "-"

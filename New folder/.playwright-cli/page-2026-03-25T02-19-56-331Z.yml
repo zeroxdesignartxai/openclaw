@@ -1,0 +1,123 @@
+- generic [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e4]:
+    - banner [ref=e12]:
+      - link "Skip to page content" [ref=e13] [cursor=pointer]:
+        - /url: javascript:void(0)
+      - generic [ref=e14]:
+        - navigation [ref=e16]:
+          - generic [ref=e17]:
+            - link "Skip to main content" [ref=e18] [cursor=pointer]:
+              - /url: javascript:void(0);
+            - link "Go to homepage" [ref=e19] [cursor=pointer]:
+              - /url: http://www.dfpi.ca.gov/
+              - img "Customer Service" [ref=e20]
+            - link "Go to homepage" [ref=e22] [cursor=pointer]:
+              - /url: http://www.dfpi.ca.gov/
+              - generic [ref=e23]: Online Services
+          - list [ref=e26]:
+            - listitem
+            - list [ref=e27]:
+              - listitem [ref=e28]:
+                - link "Help" [ref=e29] [cursor=pointer]:
+                  - /url: /csp?id=ssp_help
+              - listitem [ref=e30]:
+                - link "Complaints Sign In" [ref=e31] [cursor=pointer]:
+                  - /url: /csp?id=register_login
+        - list "Header" [ref=e34]
+    - main [ref=e35]:
+      - heading "Submit Complaint" [level=1] [ref=e36]
+      - generic [ref=e121]:
+        - generic [ref=e122]:
+          - button "1" [ref=e123] [cursor=pointer]
+          - button "2" [ref=e124] [cursor=pointer]
+          - button "3" [ref=e125] [cursor=pointer]
+          - button "4" [ref=e126] [cursor=pointer]
+          - button "5" [ref=e127] [cursor=pointer]
+          - button "6" [ref=e128] [cursor=pointer]
+          - button "7" [ref=e129] [cursor=pointer]
+        - generic [ref=e130]:
+          - generic [ref=e135]: Step 1 of 7 Select a complaint category
+          - generic [ref=e137]:
+            - generic [ref=e140]:
+              - img [ref=e141]: 
+              - text: What is this complaint about?
+              - paragraph [ref=e142]: (Choose the product or service that best matches your complaint)
+            - generic [ref=e143]:
+              - paragraph
+            - generic [ref=e145]:
+              - generic [ref=e147]:
+                - radio "Broker-Dealers and Investment Advisers" [ref=e149]
+                - generic [ref=e151]: Broker-Dealers and Investment Advisers
+              - generic [ref=e153]:
+                - radio "Checking or Savings" [ref=e155]
+                - generic [ref=e157]: Checking or Savings
+              - generic [ref=e159]:
+                - radio "Credit Card or Prepaid Cards" [ref=e161]
+                - generic [ref=e163]: Credit Card or Prepaid Cards
+              - generic [ref=e165]:
+                - radio "Credit Reporting, Credit Repair Services or Other Personal Consumer Reports" [ref=e167]
+                - generic [ref=e169]: Credit Reporting, Credit Repair Services or Other Personal Consumer Reports
+              - generic [ref=e171]:
+                - radio "Crypto-related Financial Products and Services" [ref=e173]
+                - generic [ref=e175]: Crypto-related Financial Products and Services
+              - generic [ref=e177]:
+                - radio "Debt Collection" [ref=e179]
+                - generic [ref=e181]: Debt Collection
+              - generic [ref=e183]:
+                - radio "Escrow Agent" [ref=e185]
+                - generic [ref=e187]: Escrow Agent
+              - generic [ref=e189]:
+                - radio "Franchises" [ref=e191]
+                - generic [ref=e193]: Franchises
+              - generic [ref=e195]:
+                - radio "Money Transmitters and Peer to Peer Payment Services" [ref=e197]
+                - generic [ref=e199]: Money Transmitters and Peer to Peer Payment Services
+              - generic [ref=e201]:
+                - radio "Mortgages" [ref=e203]
+                - generic [ref=e205]: Mortgages
+              - generic [ref=e207]:
+                - radio "Payday Loans, Title Loans or Personal Loans" [ref=e209]
+                - generic [ref=e211]: Payday Loans, Title Loans or Personal Loans
+              - generic [ref=e213]:
+                - radio "Property Assessed Clean Energy (PACE)" [ref=e215]
+                - generic [ref=e217]: Property Assessed Clean Energy (PACE)
+              - generic [ref=e219]:
+                - radio "Securities" [ref=e221]
+                - generic [ref=e223]: Securities
+              - generic [ref=e225]:
+                - radio "Student Loans" [ref=e227]
+                - generic [ref=e229]: Student Loans
+              - generic [ref=e231]:
+                - radio "Vehicle Loans or Leases" [checked] [active] [ref=e233]
+                - generic [ref=e235]: Vehicle Loans or Leases
+              - generic [ref=e237]:
+                - radio "Other" [ref=e239]
+                - generic [ref=e241]: Other
+          - text:                      
+        - generic [ref=e242]:
+          - button "Previous" [ref=e243] [cursor=pointer]
+          - button "Next" [ref=e244] [cursor=pointer]
+    - contentinfo [ref=e106]:
+      - contentinfo [ref=e109]:
+        - paragraph [ref=e115]:
+          - text: View our
+          - link "Privacy Policy" [ref=e116] [cursor=pointer]:
+            - /url: https://dfpi.ca.gov/privacy-policy/
+          - text: and
+          - link "Conditions of Use" [ref=e117] [cursor=pointer]:
+            - /url: https://dfpi.ca.gov/conditions-of-use/
+  - iframe [ref=e120]:
+    - generic [ref=f2e2]:
+      - generic [ref=f2e5]:
+        - link "Privacy" [ref=f2e6] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en/policies/privacy/
+        - text: "-"
+        - link "Terms" [ref=f2e7] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en/policies/terms/
+      - generic [ref=f2e8]:
+        - generic [ref=f2e9]:
+          - text: protected by
+          - strong [ref=f2e10]: reCAPTCHA
+        - generic [ref=f2e11]: "-"

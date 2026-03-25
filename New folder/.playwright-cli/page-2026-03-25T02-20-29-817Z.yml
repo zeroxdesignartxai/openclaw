@@ -1,0 +1,91 @@
+- generic [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e4]:
+    - banner [ref=e12]:
+      - link "Skip to page content" [ref=e13] [cursor=pointer]:
+        - /url: javascript:void(0)
+      - generic [ref=e14]:
+        - navigation [ref=e16]:
+          - generic [ref=e17]:
+            - link "Skip to main content" [ref=e18] [cursor=pointer]:
+              - /url: javascript:void(0);
+            - link "Go to homepage" [ref=e19] [cursor=pointer]:
+              - /url: http://www.dfpi.ca.gov/
+              - img "Customer Service" [ref=e20]
+            - link "Go to homepage" [ref=e22] [cursor=pointer]:
+              - /url: http://www.dfpi.ca.gov/
+              - generic [ref=e23]: Online Services
+          - list [ref=e26]:
+            - listitem
+            - list [ref=e27]:
+              - listitem [ref=e28]:
+                - link "Help" [ref=e29] [cursor=pointer]:
+                  - /url: /csp?id=ssp_help
+              - listitem [ref=e30]:
+                - link "Complaints Sign In" [ref=e31] [cursor=pointer]:
+                  - /url: /csp?id=register_login
+        - list "Header" [ref=e34]
+    - main [ref=e35]:
+      - heading "Submit Complaint" [level=1] [ref=e36]
+      - generic [ref=e121]:
+        - generic [ref=e122]:
+          - button "1" [ref=e123] [cursor=pointer]
+          - button "2" [ref=e124] [cursor=pointer]
+          - button "3" [ref=e125] [cursor=pointer]
+          - button "4" [ref=e126] [cursor=pointer]
+          - button "5" [ref=e127] [cursor=pointer]
+          - button "6" [ref=e128] [cursor=pointer]
+          - button "7" [ref=e129] [cursor=pointer]
+        - generic [ref=e130]:
+          - generic [ref=e135]: Step 2 of 7 Answer the category related questions
+          - text: 
+          - generic [ref=e247]:
+            - generic:
+              - generic [ref=e249]:
+                - generic [ref=e250]:
+                  - generic [ref=e251]:  Do you wish to file a complaint regarding a loan or lease?
+                  - paragraph [ref=e252]: (Most of the vehicle loan and lease complaints we receive are about one of the following tops. Select the one that best describes your complaint. You will have the chance to explain your complaint in detail in the next step.)
+                - generic [ref=e254]:
+                  - generic [ref=e256]:
+                    - radio "Loan" [checked] [active] [ref=e258]
+                    - generic [ref=e260]: Loan
+                  - generic [ref=e262]:
+                    - radio "Lease" [ref=e264]
+                    - generic [ref=e266]: Lease
+              - generic [ref=e269]:
+                - generic [ref=e271]:  Was the loan for a new or used vehicle?
+                - generic [ref=e273]:
+                  - generic [ref=e275]:
+                    - radio "New" [ref=e277]
+                    - generic [ref=e279]: New
+                  - generic [ref=e281]:
+                    - radio "Used" [ref=e283]
+                    - generic [ref=e285]: Used
+              - text:   
+          - text:                 
+        - generic [ref=e242]:
+          - button "Previous" [ref=e267] [cursor=pointer]
+          - button "Next" [ref=e244] [cursor=pointer]
+    - contentinfo [ref=e106]:
+      - contentinfo [ref=e109]:
+        - paragraph [ref=e115]:
+          - text: View our
+          - link "Privacy Policy" [ref=e116] [cursor=pointer]:
+            - /url: https://dfpi.ca.gov/privacy-policy/
+          - text: and
+          - link "Conditions of Use" [ref=e117] [cursor=pointer]:
+            - /url: https://dfpi.ca.gov/conditions-of-use/
+  - iframe [ref=e120]:
+    - generic [ref=f2e2]:
+      - generic [ref=f2e5]:
+        - link "Privacy" [ref=f2e6] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en/policies/privacy/
+        - text: "-"
+        - link "Terms" [ref=f2e7] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en/policies/terms/
+      - generic [ref=f2e8]:
+        - generic [ref=f2e9]:
+          - text: protected by
+          - strong [ref=f2e10]: reCAPTCHA
+        - generic [ref=f2e11]: "-"

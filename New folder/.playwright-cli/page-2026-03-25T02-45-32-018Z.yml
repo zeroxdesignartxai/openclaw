@@ -1,0 +1,248 @@
+- generic [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e4]:
+    - banner [ref=e12]:
+      - link "Skip to page content" [ref=e13] [cursor=pointer]:
+        - /url: javascript:void(0)
+      - generic [ref=e14]:
+        - navigation [ref=e16]:
+          - generic [ref=e17]:
+            - link "Skip to main content" [ref=e18] [cursor=pointer]:
+              - /url: javascript:void(0);
+            - link "Go to homepage" [ref=e19] [cursor=pointer]:
+              - /url: http://www.dfpi.ca.gov/
+              - img "Customer Service" [ref=e20]
+            - link "Go to homepage" [ref=e22] [cursor=pointer]:
+              - /url: http://www.dfpi.ca.gov/
+              - generic [ref=e23]: Online Services
+          - list [ref=e26]:
+            - listitem
+            - list [ref=e27]:
+              - listitem [ref=e28]:
+                - link "Help" [ref=e29] [cursor=pointer]:
+                  - /url: /csp?id=ssp_help
+              - listitem [ref=e30]:
+                - link "Complaints Sign In" [ref=e31] [cursor=pointer]:
+                  - /url: /csp?id=register_login
+        - list "Header" [ref=e34]
+    - main [ref=e35]:
+      - heading "Submit Complaint" [level=1] [ref=e36]
+      - generic [ref=e121]:
+        - generic [ref=e2359]:
+          - button "1" [ref=e2360] [cursor=pointer]
+          - button "2" [ref=e2361] [cursor=pointer]
+          - button "3" [ref=e2362] [cursor=pointer]
+          - button "4" [ref=e2363] [cursor=pointer]
+          - button "5" [ref=e2364] [cursor=pointer]
+          - button "6" [ref=e2365] [cursor=pointer]
+          - button "7" [ref=e2366] [cursor=pointer]
+        - generic [ref=e2367]:
+          - generic [ref=e2372]: Step 6 of 7 Provide general contact information
+          - text:          
+          - generic [ref=e2383]:
+            - generic [ref=e2387]:
+              - img [ref=e2388]: 
+              - generic [ref=e2389]: Are you filing this complaint on behalf of yourself or a third party?
+            - generic [ref=e2394]:
+              - radio "Myself" [checked] [ref=e2396]
+              - generic [ref=e2398]: Myself
+            - generic [ref=e2401]:
+              - generic [ref=e2402]:
+                - radio "Third Party (Includes co-owner of an account, family member, attorney, friend, etc.)" [ref=e2404]
+                - generic [ref=e2406]: Third Party
+                - generic [ref=e2407]: (Includes co-owner of an account, family member, attorney, friend, etc.)
+              - generic:
+                - heading [level=5]
+            - generic:
+              - generic:        
+            - generic [ref=e2408]:
+              - paragraph [ref=e2409]: How to Submit Documents
+              - paragraph [ref=e2410]:
+                - text: Include the complaint number with your submission. (The complaint number will be provided upon submission of your complaint).
+                - text: Email or mail supporting documents upon complaint submission to avoid processing delays.
+              - paragraph [ref=e2411]:
+                - text: "Email:"
+                - link "crc@dfpi.ca.gov" [ref=e2412] [cursor=pointer]:
+                  - /url: mailto:crc@dfpi.ca.gov
+                - text: Email attachments are limited to 100MB
+              - paragraph [ref=e2413]:
+                - text: "Mail: Attn: Consumer Services Office"
+                - text: Department of Financial Protection and Innovation
+                - text: 651 Bannon Street, Suite 300
+                - text: Sacramento, CA 95811
+            - generic [ref=e2420]:
+              - img [ref=e2421]: 
+              - text: Would you like to provide your contact information?
+            - generic [ref=e2423]:
+              - generic [ref=e2425]:
+                - radio "Yes" [checked] [ref=e2426]
+                - text: "Yes"
+              - generic [ref=e2428]:
+                - radio "No" [ref=e2429]
+                - text: "No"
+            - generic [ref=e2430]: Contact Information of Affected Party
+            - generic [ref=e2432]:
+              - generic [ref=e2433]:
+                - generic [ref=e2434]: Title
+                - combobox "Title" [ref=e2435]:
+                  - option "Ms."
+                  - option "Miss"
+                  - option "Mrs."
+                  - option "Mr." [selected]
+                  - option "Dr."
+              - generic [ref=e2436]:
+                - generic [ref=e2437]:
+                  - generic [ref=e2438]: 
+                  - text: First Name
+                - textbox " First Name" [ref=e2439]: Mauricio
+              - generic [ref=e2440]:
+                - generic [ref=e2441]:
+                  - generic [ref=e2442]: 
+                  - text: Last Name
+                - textbox " Last Name" [ref=e2443]: Sanchez
+              - generic [ref=e2444]:
+                - generic [ref=e2445]:
+                  - generic [ref=e2446]: 
+                  - text: Phone Number
+                - textbox " Phone Number" [ref=e2447]: "8187915170"
+              - generic [ref=e2448]:
+                - generic [ref=e2449]:
+                  - generic [ref=e2450]: 
+                  - text: Email
+                - textbox " Email" [ref=e2451]: handkllcservices@gmail.com
+              - generic [ref=e2452]:
+                - generic [ref=e2453]: Address Line 1
+                - textbox "Address Line 1" [ref=e2454]: 20542 Hartland Street Apt 2
+              - generic [ref=e2455]:
+                - generic [ref=e2456]: Address Line 2
+                - textbox "Address Line 2" [ref=e2457]
+              - generic [ref=e2458]:
+                - generic [ref=e2459]: City
+                - textbox "City" [ref=e2460]: Winnetka
+              - generic [ref=e2461]:
+                - generic [ref=e2462]: State
+                - combobox "State" [ref=e2463]:
+                  - option
+                  - option "Alabama"
+                  - option "Alaska"
+                  - option "Arizona"
+                  - option "Arkansas"
+                  - option "California" [selected]
+                  - option "Colorado"
+                  - option "Connecticut"
+                  - option "Delaware"
+                  - option "Florida"
+                  - option "Georgia"
+                  - option "Hawaii"
+                  - option "Idaho"
+                  - option "Illinois"
+                  - option "Indiana"
+                  - option "Iowa"
+                  - option "Kansas"
+                  - option "Kentucky"
+                  - option "Louisiana"
+                  - option "Maine"
+                  - option "Maryland"
+                  - option "Massachusetts"
+                  - option "Michigan"
+                  - option "Minnesota"
+                  - option "Mississippi"
+                  - option "Missouri"
+                  - option "Montana"
+                  - option "Nebraska"
+                  - option "Nevada"
+                  - option "New Hampshire"
+                  - option "New Jersey"
+                  - option "New Mexico"
+                  - option "New York"
+                  - option "North Carolina"
+                  - option "North Dakota"
+                  - option "Ohio"
+                  - option "Oklahoma"
+                  - option "Oregon"
+                  - option "Pennsylvania"
+                  - option "Rhode Island"
+                  - option "South Carolina"
+                  - option "South Dakota"
+                  - option "Tennessee"
+                  - option "Texas"
+                  - option "Utah"
+                  - option "Vermont"
+                  - option "Virginia"
+                  - option "Washington"
+                  - option "West Virginia"
+                  - option "Wisconsin"
+                  - option "Wyoming"
+                  - option "American Samoa"
+                  - option "District of Columbia"
+                  - option "Guam"
+                  - option "Northern Mariana Islands"
+                  - option "Puerto Rico"
+                  - option "United States Minor Outlying Islands"
+                  - option "Virgin Islands US"
+                  - option "International"
+                  - option "Other"
+              - generic [ref=e2464]:
+                - generic [ref=e2465]: Zip Code
+                - textbox "Zip Code" [ref=e2466]: "91306"
+              - generic [ref=e2472]:
+                - img [ref=e2473]: 
+                - text: Have you filed this complaint with any other agency (e.g. law enforcement, state or federal department)?
+              - generic [ref=e2475]:
+                - generic [ref=e2477]:
+                  - radio "Yes" [checked] [ref=e2478]
+                  - text: "Yes"
+                - generic [ref=e2480]:
+                  - radio "No" [ref=e2481]
+                  - text: "No"
+              - generic [ref=e2484]:
+                - generic [ref=e2485]: Who?
+                - textbox "Who?" [ref=e2486]: CFPB and DFPI
+              - generic [ref=e2490]:
+                - img [ref=e2491]: 
+                - text: What is the age of the affected party?
+              - combobox "What is the age of the affected party?" [ref=e2495]:
+                - option "Under 18"
+                - option "18 - 24"
+                - option "25 - 34"
+                - option "35 - 44" [selected]
+                - option "45 - 54"
+                - option "55 - 61"
+                - option "62+"
+                - option "Decline to Answer"
+              - generic [ref=e2499]:
+                - img [ref=e2500]: 
+                - text: Is the affected party a Service member?
+              - generic [ref=e2502]:
+                - generic [ref=e2504]:
+                  - radio "Yes" [ref=e2505]
+                  - text: "Yes"
+                - generic [ref=e2507]:
+                  - radio "No" [checked] [ref=e2508]
+                  - text: "No"
+        - generic [ref=e242]:
+          - button "Previous" [active] [ref=e2380] [cursor=pointer]
+          - button "Next" [ref=e2509] [cursor=pointer]
+    - contentinfo [ref=e106]:
+      - contentinfo [ref=e109]:
+        - paragraph [ref=e115]:
+          - text: View our
+          - link "Privacy Policy" [ref=e116] [cursor=pointer]:
+            - /url: https://dfpi.ca.gov/privacy-policy/
+          - text: and
+          - link "Conditions of Use" [ref=e117] [cursor=pointer]:
+            - /url: https://dfpi.ca.gov/conditions-of-use/
+  - iframe [ref=e120]:
+    - generic [ref=f2e2]:
+      - generic [ref=f2e5]:
+        - link "Privacy" [ref=f2e6] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en/policies/privacy/
+        - text: "-"
+        - link "Terms" [ref=f2e7] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en/policies/terms/
+      - generic [ref=f2e8]:
+        - generic [ref=f2e9]:
+          - text: protected by
+          - strong [ref=f2e10]: reCAPTCHA
+        - generic [ref=f2e11]: "-"

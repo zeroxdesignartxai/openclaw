@@ -1,0 +1,117 @@
+- generic [active] [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e4]:
+    - banner [ref=e12]:
+      - link "Skip to page content" [ref=e13] [cursor=pointer]:
+        - /url: javascript:void(0)
+      - generic [ref=e14]:
+        - navigation [ref=e16]:
+          - generic [ref=e17]:
+            - link "Skip to main content" [ref=e18] [cursor=pointer]:
+              - /url: javascript:void(0);
+            - link "Go to homepage" [ref=e19] [cursor=pointer]:
+              - /url: http://www.dfpi.ca.gov/
+              - img "Customer Service" [ref=e20]
+            - link "Go to homepage" [ref=e22] [cursor=pointer]:
+              - /url: http://www.dfpi.ca.gov/
+              - generic [ref=e23]: Online Services
+          - list [ref=e26]:
+            - listitem
+            - list [ref=e27]:
+              - listitem [ref=e28]:
+                - link "Help" [ref=e29] [cursor=pointer]:
+                  - /url: /csp?id=ssp_help
+              - listitem [ref=e30]:
+                - link "Complaints Sign In" [ref=e31] [cursor=pointer]:
+                  - /url: /csp?id=register_login
+        - list "Header" [ref=e34]
+    - main [ref=e35]:
+      - heading "Submit Complaint" [level=1] [ref=e36]
+      - generic [ref=e45]:
+        - generic [ref=e46]: Submit a Complaint
+        - paragraph
+        - generic [ref=e48]: "Note: In order to save your complaint data, please use the navigation buttons (Previous, Next) located near the bottom of each page. Using your browser back and forward buttons will refresh your screen and erase complaint data that you've entered."
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - img [ref=e51]: 
+            - text: How did you hear about us?
+          - generic [ref=e53]:
+            - generic [ref=e55]:
+              - radio "News or media reports" [ref=e56]
+              - text: News or media reports
+            - generic [ref=e58]:
+              - radio "Radio" [ref=e59]
+              - text: Radio
+            - generic [ref=e61]:
+              - radio "Billboards" [ref=e62]
+              - text: Billboards
+            - generic [ref=e64]:
+              - radio "Social media" [ref=e65]
+              - text: Social media
+            - generic [ref=e67]:
+              - radio "Other" [ref=e68]
+              - text: Other
+        - generic [ref=e69]:
+          - generic [ref=e70]:
+            - img [ref=e71]: 
+            - text: Does your complaint involve Crypto or digital asset?
+          - generic [ref=e73]:
+            - generic [ref=e75]:
+              - radio "Yes" [ref=e76]
+              - text: "Yes"
+            - generic [ref=e78]:
+              - radio "No" [ref=e79]
+              - text: "No"
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - img [ref=e82]: 
+            - text: Are you a current or former employee looking to report potential wrongdoing about your employer?
+          - generic [ref=e84]:
+            - generic [ref=e86]:
+              - radio "Yes" [ref=e87]
+              - text: "Yes"
+            - generic [ref=e89]:
+              - radio "No" [ref=e90]
+              - text: "No"
+        - generic [ref=e91]:
+          - paragraph [ref=e93]:
+            - img [ref=e94]: 
+            - text: Legal Consent
+          - generic [ref=e95]:
+            - paragraph [ref=e96]: By submitting this complaint, you certify the information provided is true and correct to the best of your knowledge and consent to allow the subject of the complaint and its affiliates to disclose to the Department any information the Department deems relevant to your complaint, including your transactions, accounts, and other experiences with them. If you are submitting this complaint on behalf of another person, you certify under penalty of perjury you are authorized to submit this complaint on that person's behalf.
+            - paragraph [ref=e97]: The Department uses consumer complaint information to investigate potential violations of law. In general, consumer complaints are considered to have been received by the Department in confidence. However, Civil Code section 1798.24 allows the Department to disclose your personal information with another person or governmental organization to the extent needed to obtain information for our investigation of a failure to comply with our laws. It also allows the Department to disclose your information with other self-regulatory organizations and government agencies, including federal and state financial services regulators and law enforcement agencies, if certain conditions are met and subject to limitations.
+            - paragraph [ref=e98]: "In addition, you may consent to the Department's disclosure of your personal information for reasons other than those set forth in Civil Code section 1798.24 (for example, to allow the Department to forward your personal information to the subject of your complaint when an investigation by the Department is not needed). If you consent to the Department's disclosure of your personal information for these other reasons, please mark the box below:"
+            - paragraph [ref=e99]: I consent to the Department's disclosure of my personal information (including my name and financial matters) with the subject of my complaint, with other governmental or quasi-governmental agencies, and with self-regulatory organizations, to the extent the disclosure is needed to help resolve my complaint. This consent is valid for two years from the date my complaint is received by the Department. After those two years have elapsed, the Department will need to obtain a new consent from me to disclose my personal information for reasons other than those set forth in Civil Code section 1798.24
+          - generic [ref=e100]:
+            - generic [ref=e101]: Select an option below to proceed with submitting a complaint.
+            - paragraph [ref=e102]:
+              - combobox "Select an option below to proceed with submitting a complaint." [disabled] [ref=e103]:
+                - option "-select-" [selected]
+                - option "I consent"
+                - option "I do not consent"
+        - generic [ref=e104]:
+          - button "Next" [disabled]
+        - paragraph [ref=e105]
+    - contentinfo [ref=e106]:
+      - contentinfo [ref=e109]:
+        - paragraph [ref=e115]:
+          - text: View our
+          - link "Privacy Policy" [ref=e116] [cursor=pointer]:
+            - /url: https://dfpi.ca.gov/privacy-policy/
+          - text: and
+          - link "Conditions of Use" [ref=e117] [cursor=pointer]:
+            - /url: https://dfpi.ca.gov/conditions-of-use/
+  - iframe [ref=e120]:
+    - generic [ref=f2e2]:
+      - generic [ref=f2e5]:
+        - link "Privacy" [ref=f2e6] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en/policies/privacy/
+        - text: "-"
+        - link "Terms" [ref=f2e7] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en/policies/terms/
+      - generic [ref=f2e8]:
+        - generic [ref=f2e9]:
+          - text: protected by
+          - strong [ref=f2e10]: reCAPTCHA
+        - generic [ref=f2e11]: "-"

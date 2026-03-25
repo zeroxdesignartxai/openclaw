@@ -1,0 +1,118 @@
+- generic [ref=e3]:
+  - generic [ref=e6]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - img "US flag" [ref=e10]
+        - paragraph [ref=e11]:
+          - strong [ref=e12]: An official website of the United States government
+      - button "Here's how you know" [ref=e14] [cursor=pointer]:
+        - text: Here's how you know
+        - img [ref=e15]
+    - generic [ref=e20]:
+      - link "Identity Theft Logo" [ref=e21] [cursor=pointer]:
+        - /url: https://identitytheft.gov
+        - img "Identity Theft Logo" [ref=e22]
+      - link "Do Not Call Logo" [ref=e23] [cursor=pointer]:
+        - /url: https://www.donotcall.gov
+        - img "Do Not Call Logo" [ref=e24]
+    - navigation [ref=e25]:
+      - link "ReportFraud Logo" [ref=e26] [cursor=pointer]:
+        - /url: /
+        - img "ReportFraud Logo" [ref=e27]
+      - separator
+    - separator [ref=e50]
+  - generic [ref=e208]:
+    - generic [ref=e210]:
+      - generic [ref=e211]: Start
+      - progressbar "25% of 100% progress bar" [ref=e213]
+      - generic [ref=e214]: Submit
+    - generic [ref=e216]:
+      - heading "Is your report about any of these common problems?" [level=3] [ref=e217]
+      - paragraph [ref=e218]: Choose the best fit. If you don't see your problem, choose “Something else.”
+    - generic [ref=e221]:
+      - generic [ref=e224] [cursor=pointer]:
+        - radio "An impersonator (ex. fake government, business, love interest, grandchild)"
+        - generic [ref=e225]:
+          - text: An impersonator
+          - generic [ref=e226]: (ex. fake government, business, love interest, grandchild)
+      - generic [ref=e230] [cursor=pointer]:
+        - radio "Online shopping"
+        - generic [ref=e231]: Online shopping
+      - generic [ref=e235] [cursor=pointer]:
+        - radio "Job, investment, money-making opportunity, franchise"
+        - generic [ref=e236]: Job, investment, money-making opportunity, franchise
+      - generic [ref=e240] [cursor=pointer]:
+        - radio "Sweepstakes, prize, lottery"
+        - generic [ref=e241]: Sweepstakes, prize, lottery
+      - generic [ref=e245] [cursor=pointer]:
+        - radio "Phone, internet, TV service"
+        - generic [ref=e246]: Phone, internet, TV service
+      - generic [ref=e250] [cursor=pointer]:
+        - radio "Auto sale, repair" [checked]
+        - generic [ref=e251]: Auto sale, repair
+      - generic [ref=e255] [cursor=pointer]:
+        - radio "Health (ex. weight loss, eye care, treatment)"
+        - generic [ref=e256]:
+          - text: Health
+          - generic [ref=e257]: (ex. weight loss, eye care, treatment)
+      - generic [ref=e261] [cursor=pointer]:
+        - radio "Credit, debt, loan (ex. debt collection, credit report, student loan debt relief)"
+        - generic [ref=e262]:
+          - text: Credit, debt, loan
+          - generic [ref=e263]: (ex. debt collection, credit report, student loan debt relief)
+      - generic [ref=e267] [cursor=pointer]:
+        - radio "Just an annoying call"
+        - generic [ref=e268]: Just an annoying call
+      - generic [ref=e272] [cursor=pointer]:
+        - radio "Something else (we'll get it to the right place)"
+        - generic [ref=e273]:
+          - text: Something else
+          - generic [ref=e274]: (we'll get it to the right place)
+    - generic [ref=e284]:
+      - heading "What type of auto problem was it?" [level=3] [ref=e287]
+      - generic [ref=e290]:
+        - generic [ref=e293] [cursor=pointer]:
+          - radio "New auto sales experience"
+          - generic [ref=e294]: New auto sales experience
+        - generic [ref=e298] [cursor=pointer]:
+          - radio "Used auto sales experience" [checked] [active]
+          - generic [ref=e299]: Used auto sales experience
+        - generic [ref=e303] [cursor=pointer]:
+          - radio "Auto parts or repair"
+          - generic [ref=e304]: Auto parts or repair
+        - generic [ref=e308] [cursor=pointer]:
+          - radio "Auto warranty"
+          - generic [ref=e309]: Auto warranty
+    - separator [ref=e276]
+    - button "Continue White Right Arrow" [ref=e278] [cursor=pointer]:
+      - generic [ref=e279]: Continue
+      - img "White Right Arrow" [ref=e281]
+  - contentinfo [ref=e171]:
+    - generic [ref=e172]:
+      - generic [ref=e173]:
+        - paragraph [ref=e174]:
+          - link "ReportFraud.ftc.gov" [ref=e175] [cursor=pointer]:
+            - /url: /
+          - text: is the federal government's website where you can report fraud, scams, and bad business practices.
+        - paragraph [ref=e176]:
+          - text: Visit
+          - link "consumer.ftc.gov" [ref=e177] [cursor=pointer]:
+            - /url: https://consumer.ftc.gov
+          - text: to find tips and learn how to avoid scams.
+        - paragraph [ref=e178]:
+          - link "Privacy Policy" [ref=e179] [cursor=pointer]:
+            - /url: https://www.ftc.gov/site-information/privacy-policy
+      - generic [ref=e180]:
+        - link "ReportFraud Footer Logo" [ref=e181] [cursor=pointer]:
+          - /url: /
+          - img "ReportFraud Footer Logo" [ref=e182]
+        - list [ref=e183]:
+          - listitem [ref=e184]:
+            - link "FAQs" [ref=e185] [cursor=pointer]:
+              - /url: /faq
+          - listitem [ref=e203]:
+            - link "Report Now" [ref=e204] [cursor=pointer]:
+              - /url: /assistant
+        - paragraph [ref=e205]:
+          - text: "OMB CONTROL#: 3084-0169"
+          - text: Under the Paperwork Reduction Act, federal agencies are not allowed to collect information from the public without a valid OMB control number.

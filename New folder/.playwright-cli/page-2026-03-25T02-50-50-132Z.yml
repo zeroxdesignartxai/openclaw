@@ -1,0 +1,148 @@
+- generic [ref=e3]:
+  - generic [ref=e6]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - img "US flag" [ref=e10]
+        - paragraph [ref=e11]:
+          - strong [ref=e12]: An official website of the United States government
+      - button "Here's how you know" [ref=e14] [cursor=pointer]:
+        - text: Here's how you know
+        - img [ref=e15]
+    - generic [ref=e20]:
+      - link "Identity Theft Logo" [ref=e21] [cursor=pointer]:
+        - /url: https://identitytheft.gov
+        - img "Identity Theft Logo" [ref=e22]
+      - link "Do Not Call Logo" [ref=e23] [cursor=pointer]:
+        - /url: https://www.donotcall.gov
+        - img "Do Not Call Logo" [ref=e24]
+    - navigation [ref=e25]:
+      - link "ReportFraud Logo" [ref=e26] [cursor=pointer]:
+        - /url: /
+        - img "ReportFraud Logo" [ref=e27]
+      - separator
+    - separator [ref=e50]
+  - generic [ref=e314]:
+    - generic [ref=e316]:
+      - generic [ref=e317]: Start
+      - progressbar "50% of 100% progress bar" [ref=e319]
+      - generic [ref=e320]: Submit
+    - generic [ref=e321]:
+      - generic [ref=e323]:
+        - heading "Report details" [level=3] [ref=e324]
+        - separator [ref=e325]
+        - paragraph [ref=e326]: Please share as much as you know. The details help law enforcement investigations.
+        - generic [ref=e327]:
+          - generic [ref=e328]: Did you pay or send money?
+          - generic [ref=e329]:
+            - radio "Yes" [checked] [ref=e330]
+            - generic [ref=e331]: "Yes"
+            - radio "No" [ref=e332]
+            - generic [ref=e333]: "No"
+        - generic [ref=e334]:
+          - generic [ref=e335]: How much money did you pay or send?
+          - generic [ref=e337]:
+            - generic [ref=e339]: $
+            - textbox "How much money did you pay or send?" [ref=e340]
+        - generic [ref=e341]:
+          - generic [ref=e342]: How did you pay or send the money?
+          - combobox "How did you pay or send the money?" [ref=e344]:
+            - option "Select" [selected]
+            - option "Payment App or Service (ex. Zelle, PayPal, Cash App)"
+            - option "Bank Wire Transfer or Payment"
+            - option "Credit Card"
+            - option "Debit Card"
+            - option "Gift Card or Reload Card (ex. Apple, Google Play, MoneyPak)"
+            - option "Wire Transfer Service (ex. Western Union, MoneyGram)"
+            - option "Cryptocurrency (ex. Bitcoin)"
+            - option "Money Order"
+            - option "Check"
+            - option "Cash"
+            - option "Other"
+        - generic [ref=e345]:
+          - generic [ref=e346]: When did you most recently pay or send money (mm/dd/yyyy)?
+          - textbox "When did you most recently pay or send money (mm/dd/yyyy)?" [ref=e348]
+        - generic [ref=e349]:
+          - generic [ref=e350]: How did it start (ex. how did they first contact you, where did you see an ad)?
+          - combobox "How did it start (ex. how did they first contact you, where did you see an ad)?" [ref=e352]:
+            - option "Select" [selected]
+            - option "Phone Call"
+            - option "Social Media (ex. Facebook, Instagram)"
+            - option "Online Ad or Pop-up"
+            - option "Website or App"
+            - option "Email"
+            - option "Text"
+            - option "Mail"
+            - option "In Person"
+            - option "TV or Radio"
+            - option "Print Media (ex. magazine, newspaper)"
+            - option "Other"
+      - generic [ref=e354]:
+        - heading "Details about the company or individual" [level=3] [ref=e355]
+        - separator [ref=e356]
+        - paragraph [ref=e357]: Please share as much as you know. The details help law enforcement investigations.
+        - generic [ref=e358]:
+          - generic [ref=e359]: Name of the company
+          - textbox "Name of the company" [ref=e361]
+        - generic [ref=e362]:
+          - paragraph [ref=e363]: Name of the person you dealt with
+          - generic [ref=e364]:
+            - generic [ref=e365]: Their First Name
+            - textbox "Their First Name" [ref=e366]
+          - generic [ref=e367]:
+            - generic [ref=e368]: Their Last Name
+            - textbox "Their Last Name" [ref=e369]
+        - generic [ref=e370]:
+          - generic [ref=e371]: Do you have any other information about them (phone, website, etc.)?
+          - generic [ref=e372]:
+            - radio "Yes" [ref=e373]
+            - generic [ref=e374]: "Yes"
+            - radio "No" [checked] [ref=e375]
+            - generic [ref=e376]: "No"
+      - generic [ref=e378]:
+        - heading "Comments" [level=3] [ref=e379]
+        - separator [ref=e380]
+        - generic [ref=e382]:
+          - generic [ref=e384]:
+            - text: Describe what happened.
+            - text: Tell us what happened in your own words. Include specific details you remember.
+            - text: Do not include any sensitive information, such as SSN, DOB, driver's license numbers, account numbers, medical history, etc.
+          - generic [ref=e385]:
+            - textbox "Describe what happened. Tell us what happened in your own words. Include specific details you remember. Do not include any sensitive information, such as SSN, DOB, driver's license numbers, account numbers, medical history, etc." [ref=e386]
+            - paragraph [ref=e387]: 0 characters of 3500 used
+      - separator [ref=e389]
+      - generic [ref=e390]:
+        - button "Blue Left Arrow Back" [ref=e391] [cursor=pointer]:
+          - img "Blue Left Arrow" [ref=e393]
+          - text: Back
+        - button "Continue White Right Arrow" [ref=e394] [cursor=pointer]:
+          - text: Continue
+          - img "White Right Arrow" [ref=e396]
+  - contentinfo [ref=e171]:
+    - generic [ref=e172]:
+      - generic [ref=e173]:
+        - paragraph [ref=e174]:
+          - link "ReportFraud.ftc.gov" [ref=e175] [cursor=pointer]:
+            - /url: /
+          - text: is the federal government's website where you can report fraud, scams, and bad business practices.
+        - paragraph [ref=e176]:
+          - text: Visit
+          - link "consumer.ftc.gov" [ref=e177] [cursor=pointer]:
+            - /url: https://consumer.ftc.gov
+          - text: to find tips and learn how to avoid scams.
+        - paragraph [ref=e178]:
+          - link "Privacy Policy" [ref=e179] [cursor=pointer]:
+            - /url: https://www.ftc.gov/site-information/privacy-policy
+      - generic [ref=e180]:
+        - link "ReportFraud Footer Logo" [ref=e181] [cursor=pointer]:
+          - /url: /
+          - img "ReportFraud Footer Logo" [ref=e182]
+        - list [ref=e183]:
+          - listitem [ref=e184]:
+            - link "FAQs" [ref=e185] [cursor=pointer]:
+              - /url: /faq
+          - listitem [ref=e203]:
+            - link "Report Now" [ref=e204] [cursor=pointer]:
+              - /url: /assistant
+        - paragraph [ref=e205]:
+          - text: "OMB CONTROL#: 3084-0169"
+          - text: Under the Paperwork Reduction Act, federal agencies are not allowed to collect information from the public without a valid OMB control number.

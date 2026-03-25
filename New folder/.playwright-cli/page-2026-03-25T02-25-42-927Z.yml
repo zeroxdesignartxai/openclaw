@@ -1,0 +1,175 @@
+- generic [ref=e1]:
+  - iframe [ref=e2]:
+    
+  - generic [ref=e4]:
+    - banner [ref=e12]:
+      - link "Skip to page content" [ref=e13] [cursor=pointer]:
+        - /url: javascript:void(0)
+      - generic [ref=e14]:
+        - navigation [ref=e16]:
+          - generic [ref=e17]:
+            - link "Skip to main content" [ref=e18] [cursor=pointer]:
+              - /url: javascript:void(0);
+            - link "Go to homepage" [ref=e19] [cursor=pointer]:
+              - /url: http://www.dfpi.ca.gov/
+              - img "Customer Service" [ref=e20]
+            - link "Go to homepage" [ref=e22] [cursor=pointer]:
+              - /url: http://www.dfpi.ca.gov/
+              - generic [ref=e23]: Online Services
+          - list [ref=e26]:
+            - listitem
+            - list [ref=e27]:
+              - listitem [ref=e28]:
+                - link "Help" [ref=e29] [cursor=pointer]:
+                  - /url: /csp?id=ssp_help
+              - listitem [ref=e30]:
+                - link "Complaints Sign In" [ref=e31] [cursor=pointer]:
+                  - /url: /csp?id=register_login
+        - list "Header" [ref=e34]
+    - main [ref=e35]:
+      - heading "Submit Complaint" [level=1] [ref=e36]
+      - generic [ref=e121]:
+        - generic [ref=e122]:
+          - button "1" [ref=e123] [cursor=pointer]
+          - button "2" [ref=e124] [cursor=pointer]
+          - button "3" [ref=e125] [cursor=pointer]
+          - button "4" [ref=e126] [cursor=pointer]
+          - button "5" [ref=e127] [cursor=pointer]
+          - button "6" [ref=e128] [cursor=pointer]
+          - button "7" [ref=e129] [cursor=pointer]
+        - generic [ref=e130]:
+          - generic [ref=e135]: Step 5 of 7 Enter the organization and account information
+          - text:        
+          - generic [ref=e335]:
+            - generic [ref=e337]:
+              - text: What organization or individual is the complaint about?
+              - text: (If you consented, we may forward your entire complaint to the organization and request they respond promptly.)
+            - generic [ref=e338]:
+              - generic [ref=e339]:
+                - img [ref=e340]: 
+                - text: Organization Name
+              - textbox "Organization Name" [ref=e341]: Green Road Finance Inc.
+            - generic [ref=e342]:
+              - generic [ref=e343]: Organization Address
+              - textbox "Organization Address" [ref=e344]: 1314 West Glenoaks Blvd Suite 100
+            - generic [ref=e345]:
+              - generic [ref=e346]: Organization City
+              - textbox "Organization City" [active] [ref=e347]: Glendale
+            - generic [ref=e348]:
+              - generic [ref=e349]: Organization State
+              - combobox "Organization State" [ref=e350]:
+                - option
+                - option "Alabama"
+                - option "Alaska"
+                - option "Arizona"
+                - option "Arkansas"
+                - option "California" [selected]
+                - option "Colorado"
+                - option "Connecticut"
+                - option "Delaware"
+                - option "Florida"
+                - option "Georgia"
+                - option "Hawaii"
+                - option "Idaho"
+                - option "Illinois"
+                - option "Indiana"
+                - option "Iowa"
+                - option "Kansas"
+                - option "Kentucky"
+                - option "Louisiana"
+                - option "Maine"
+                - option "Maryland"
+                - option "Massachusetts"
+                - option "Michigan"
+                - option "Minnesota"
+                - option "Mississippi"
+                - option "Missouri"
+                - option "Montana"
+                - option "Nebraska"
+                - option "Nevada"
+                - option "New Hampshire"
+                - option "New Jersey"
+                - option "New Mexico"
+                - option "New York"
+                - option "North Carolina"
+                - option "North Dakota"
+                - option "Ohio"
+                - option "Oklahoma"
+                - option "Oregon"
+                - option "Pennsylvania"
+                - option "Rhode Island"
+                - option "South Carolina"
+                - option "South Dakota"
+                - option "Tennessee"
+                - option "Texas"
+                - option "Utah"
+                - option "Vermont"
+                - option "Virginia"
+                - option "Washington"
+                - option "West Virginia"
+                - option "Wisconsin"
+                - option "Wyoming"
+                - option "American Samoa"
+                - option "District of Columbia"
+                - option "Guam"
+                - option "Northern Mariana Islands"
+                - option "Puerto Rico"
+                - option "United States Minor Outlying Islands"
+                - option "Virgin Islands US"
+                - option "International"
+                - option "Other"
+            - generic [ref=e351]:
+              - generic [ref=e352]: Organization Zip Code
+              - textbox "Organization Zip Code" [ref=e353]
+            - generic [ref=e356]:
+              - generic [ref=e357]: Organization Website
+              - textbox "Organization Website" [ref=e358]
+            - generic [ref=e360]:
+              - generic [ref=e361]:
+                - text:  Individual Name
+                - text: (Required if organization is not provided)
+              - textbox "Individual Name (Required if organization is not provided)" [ref=e363]
+            - paragraph [ref=e365]: If you have the information below available, please provide if applicable.
+            - generic [ref=e367]:
+              - generic [ref=e368]:
+                - text: Account Number
+                - paragraph [ref=e369]: (This number is on your billing statement)
+              - textbox "Account Number (This number is on your billing statement)" [ref=e370]
+            - generic [ref=e371]:
+              - generic [ref=e372]:
+                - text: Loan Number
+                - paragraph [ref=e373]: (This number is on your loan document)
+              - textbox "Loan Number (This number is on your loan document)" [ref=e374]
+            - paragraph [ref=e377]: Do you want to include additional organizations or individuals related to this issue?
+            - generic [ref=e379]:
+              - radio "Yes" [ref=e380]
+              - text: "Yes"
+            - generic [ref=e382]:
+              - radio "No" [ref=e383]
+              - text: "No"
+          - text:             
+        - generic [ref=e242]:
+          - button "Previous" [ref=e267] [cursor=pointer]
+          - button "Next" [ref=e244] [cursor=pointer]
+    - contentinfo [ref=e106]:
+      - contentinfo [ref=e109]:
+        - paragraph [ref=e115]:
+          - text: View our
+          - link "Privacy Policy" [ref=e116] [cursor=pointer]:
+            - /url: https://dfpi.ca.gov/privacy-policy/
+          - text: and
+          - link "Conditions of Use" [ref=e117] [cursor=pointer]:
+            - /url: https://dfpi.ca.gov/conditions-of-use/
+  - iframe [ref=e120]:
+    - generic [ref=f2e2]:
+      - generic [ref=f2e5]:
+        - link "Privacy" [ref=f2e6] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en/policies/privacy/
+        - text: "-"
+        - link "Terms" [ref=f2e7] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en/policies/terms/
+      - generic [ref=f2e8]:
+        - generic [ref=f2e9]:
+          - text: protected by
+          - strong [ref=f2e10]: reCAPTCHA
+        - generic [ref=f2e11]: "-"

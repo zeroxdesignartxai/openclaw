@@ -1,0 +1,112 @@
+- generic [ref=e1]:
+  - dialog [ref=e517]:
+    - generic [ref=e520]:
+      - region "Header" [ref=e521]: PRIVACY NOTICE
+      - generic [active] [ref=e522]:
+        - region "Privacy Notice" [ref=e523]: The following notice is required by state law under the Information Practices Act of 1977 (California Civil Code Section 1798.17).
+        - region "DFPI Collects and Uses Personal Information" [ref=e524]: "DFPI Collects and Uses Personal Information: The California Department of Financial Protection and Innovation collects the information requested in the attached form as authorized by the Financial Code and Chapters 1 and 3 of Title 10 of the California Code of Regulations. In addition to using this information to take appropriate action against the subject of your complaint, the DFPI may also use the information to determine whether:"
+        - region "Determination List" [ref=e525]:
+          - region "Licensed Agency or Authority" [ref=e526]: A license, qualification, registration, certificate, or other authority should be accepted, granted, approved, denied, revoked, or limited in any way;
+          - region "regulared entities or individuals" [ref=e527]: Business entities or individuals regulated by the DFPI are conducting themselves in accordance with applicable laws; and/or
+          - region "Legal requirments" [ref=e528]: Laws administered by the DFPI are being or have been violated and whether administrative action, civil action, or referral to a self-regulatory organization or other government agency is appropriate.
+        - region "Commissioner responsibity" [ref=e529]: The Commissioner is responsible for the performance of all duties, the exercise of all powers and jurisdiction, and the assumption and discharge of all responsibilities vested by law in the DFPI. The Commissioner has and may exercise all the powers necessary or convenient for the administration and enforcement of, among other laws, the laws described in Financial Code section 300. The Commissioner may issue such rules and regulations consistent with law as he or she may deem necessary or advisable in executing the powers, duties, and responsibilities of the DFPI.
+        - region "Maintained By" [ref=e530]: "The information you provide is maintained by the DFPI pursuant to one or more of the following laws:"
+        - region "Maintained By List" [ref=e531]:
+          - region "California Consumer Financial Protection Law" [ref=e532]: California Consumer Financial Protection Law (Financial Code section 90000, et seq.);
+          - region "Debt Collection Licensing Act" [ref=e533]: Debt Collection Licensing Act (Financial Code section 100000, et seq.);
+          - region "Student Loan Servicing Act" [ref=e534]: Student Loan Servicing Act (Financial Code section 28100, et seq.);
+          - region "Corporate Securities Law of 1968" [ref=e535]: Corporate Securities Law of 1968 (Corporations Code section 25000, et seq.);
+          - region "Capital Access Company Law" [ref=e536]: Capital Access Company Law (Corporations Code section 28000, et seq.);
+          - region "Bucket Shop Law" [ref=e537]: Bucket Shop Law (Corporations Code section 29000, et seq.);
+          - region "California Commodity Law of 1990" [ref=e538]: California Commodity Law of 1990 (Corporations Code section 29500, et seq.);
+          - region "Franchise Investment Law" [ref=e539]: Franchise Investment Law (Corporations Code section 31000, et seq.);
+          - region "Financial Institutions Law" [ref=e540]: Financial Institutions Law (Financial Code section 99, et seq.);
+          - region "Money Transmission Act" [ref=e541]: Money Transmission Act (Financial Code section 2000, et seq.);
+          - region "Check Sellers, Bill Payers and Proraters Law" [ref=e542]: Check Sellers, Bill Payers and Proraters Law (Financial Code section 12000, et seq.);
+          - region "California Credit Union Law" [ref=e543]: California Credit Union Law (Financial Code section 14000, et seq.);
+          - region "California Deferred Deposit Transaction Law" [ref=e544]: California Deferred Deposit Transaction Law (Financial Code section 23000, et seq.);
+          - region "Escrow Law" [ref=e545]: Escrow Law (Financial Code section 17000, et seq.);
+          - region "California Financing Law" [ref=e546]: California Financing Law (Financial Code section 22000, et seq.);
+          - region "Securities Depository Law" [ref=e547]: Securities Depository Law (Financial Code section 30000, et seq.); and
+          - region "California Residential Mortgage Lending Act" [ref=e548]: California Residential Mortgage Lending Act (Financial Code section 50000, et seq.).
+        - region "Providing Personal Information is Not Mandatory" [ref=e549]: "Providing Personal Information is Not Mandatory: All information you provide is voluntary. You are not required to provide personal information, such as your name, Social Security number, physical description, home address, home telephone number, education, financial matters, and medical or employment history. Please do not provide personal information unless the DFPI requests it."
+        - region "DFPI May Disclose Your Personal Information" [ref=e550]: "DFPI May Disclose Your Personal Information: Without your consent, we may share your personal information to the extent allowed by Civil Code section 1798.24. This includes sharing your personal information with another person or governmental organization to the extent needed to obtain information for our investigation of a failure to comply with our laws. This also includes sharing your information with other self-regulatory organizations and government agencies, including federal and state financial services regulators and law enforcement agencies, if certain conditions are met and subject to limitations."
+        - region "Your Access to Your Personal Information" [ref=e551]: "Your Access to Your Personal Information: You have a right to see your personal information maintained by the DFPI. To request access, please contact:"
+        - region "General Counsel" [ref=e552]: General Counsel,
+        - region "Department of Financial Protection and Innovation" [ref=e553]
+        - region "Street Address" [ref=e554]: 651 Bannon Street, Suite 300
+        - region "City, State, ZIP" [ref=e555]: Sacramento, CA 95811
+        - region "Phone" [ref=e556]: (916) 324-9011
+      - region "Close bar" [ref=e557]:
+        - button "Close Button" [ref=e558] [cursor=pointer]:
+          - button "Close Button" [ref=e559]: Close
+  - iframe [ref=e2]:
+    
+  - generic [ref=e4]:
+    - banner [ref=e12]:
+      - link "Skip to page content" [ref=e13] [cursor=pointer]:
+        - /url: javascript:void(0)
+      - generic [ref=e14]:
+        - navigation [ref=e16]:
+          - generic [ref=e17]:
+            - link "Skip to main content" [ref=e18] [cursor=pointer]:
+              - /url: javascript:void(0);
+            - link "Go to homepage" [ref=e19] [cursor=pointer]:
+              - /url: http://www.dfpi.ca.gov/
+              - img "Customer Service" [ref=e20]
+            - link "Go to homepage" [ref=e22] [cursor=pointer]:
+              - /url: http://www.dfpi.ca.gov/
+              - generic [ref=e23]: Online Services
+          - list [ref=e26]:
+            - listitem
+            - list [ref=e27]:
+              - listitem [ref=e28]:
+                - link "Help" [ref=e29] [cursor=pointer]:
+                  - /url: /csp?id=ssp_help
+              - listitem [ref=e30]:
+                - link "Complaints Sign In" [ref=e31] [cursor=pointer]:
+                  - /url: /csp?id=register_login
+        - list "Header" [ref=e34]
+    - main [ref=e35]:
+      - heading "Submit Complaint" [level=1] [ref=e36]
+      - generic [ref=e121]:
+        - generic [ref=e122]:
+          - button "1" [ref=e123] [cursor=pointer]
+          - button "2" [ref=e124] [cursor=pointer]
+          - button "3" [ref=e125] [cursor=pointer]
+          - button "4" [ref=e126] [cursor=pointer]
+          - button "5" [ref=e127] [cursor=pointer]
+          - button "6" [ref=e128] [cursor=pointer]
+          - button "7" [ref=e129] [cursor=pointer]
+        - generic [ref=e130]:
+          - generic [ref=e135]: Step 7 of 7
+          - text:                           
+          - generic [ref=e564]:
+            - paragraph [ref=e565]: Thank you for taking the time to complete your complaint information. You may review your complaint by clicking on the Review button below. By selecting Submit, your complaint will be submitted to the DFPI for processing.
+            - paragraph [ref=e566]: If you have provided an email address, you will receive an email confirmation upon submission of the complaint.
+        - generic [ref=e242]:
+          - button "Previous" [ref=e267] [cursor=pointer]
+          - button "Review" [ref=e567] [cursor=pointer]
+          - button "Submit" [ref=e568] [cursor=pointer]
+    - contentinfo [ref=e106]:
+      - contentinfo [ref=e109]:
+        - paragraph [ref=e115]:
+          - text: View our
+          - link "Privacy Policy" [ref=e116] [cursor=pointer]:
+            - /url: https://dfpi.ca.gov/privacy-policy/
+          - text: and
+          - link "Conditions of Use" [ref=e117] [cursor=pointer]:
+            - /url: https://dfpi.ca.gov/conditions-of-use/
+  - iframe [ref=e120]:
+    - generic [ref=f2e2]:
+      - generic [ref=f2e5]:
+        - link "Privacy" [ref=f2e6] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en/policies/privacy/
+        - text: "-"
+        - link "Terms" [ref=f2e7] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en/policies/terms/
+      - generic [ref=f2e8]:
+        - generic [ref=f2e9]:
+          - text: protected by
+          - strong [ref=f2e10]: reCAPTCHA
+        - generic [ref=f2e11]: "-"
