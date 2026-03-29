@@ -73,6 +73,17 @@ class SafeLyricsTests(unittest.TestCase):
         )
         self.assertIn("Verse 1, Chorus, Verse 2, Chorus, Bridge, Chorus", prompt)
 
+    def test_prompt_includes_power_guidance(self) -> None:
+        prompt = build_generation_prompt(
+            genre="Trap",
+            topic="winning back time",
+            mood="relentless",
+            style_index={"genres": {}, "documents": []},
+            power="Brutal",
+        )
+        self.assertIn("Beat power", prompt)
+        self.assertIn("Brutal — aggressive debugging", prompt)
+
 
 if __name__ == "__main__":
     unittest.main()

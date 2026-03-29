@@ -1,8 +1,10 @@
 from safe_lyrics.prompt_builder import build_generation_prompt
 
 
-def build_planner_prompt(genre: str, topic: str, mood: str, style_index: dict, trend_summary: dict) -> str:
-    base = build_generation_prompt(genre, topic, mood, style_index, trend_summary)
+def build_planner_prompt(
+    genre: str, topic: str, mood: str, style_index: dict, trend_summary: dict, power: str | None = None
+) -> str:
+    base = build_generation_prompt(genre, topic, mood, style_index, trend_summary, power=power)
     return f"""{base}
 
 You are the planning stage in a lyric-writing workflow.

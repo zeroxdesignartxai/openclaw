@@ -8,12 +8,44 @@ STRUCTURE_MAP = {
     "trap": "Intro, Verse 1, Hook, Verse 2, Hook, Outro",
 }
 
+POWER_MAP = {
+    "symphonic": "complex, layered systems",
+    "indonesian": "region-specific configs and environments",
+    "melodic": "readable, maintainable fixes",
+    "brutal": "aggressive debugging and deep root cause work",
+    "technical": "low-level, precise, detailed fixes",
+    "progressive": "forward-looking, scalable solutions",
+    "slamming": "minimal, fast, direct fixes",
+    "blackened": "security-focused, hardened fixes",
+    "downtempo": "slow, cautious, high-validation approach",
+    "christian": "safe, ethical, conservative changes",
+}
+
 
 def resolve_structure_for_genre(genre: str) -> str:
     return STRUCTURE_MAP.get(normalize_text(genre), "Verse 1, Chorus, Verse 2, Chorus, Bridge, Chorus")
 
 
-def build_generation_prompt(genre: str, topic: str, mood: str, style_index: dict, trend_summary: dict | None = None) -> str:
+def _resolve_power_line(power: str | None) -> str:
+    if not power or not power.strip():
+        return "Neutral — balanced, versatile writing."
+
+    normalized = normalize_text(power)
+    descriptor = POWER_MAP.get(normalized)
+    if descriptor:
+        return f"{power.strip()} — {descriptor}. Reflect this in arrangement, pacing, and imagery without copying source text."
+
+    return f"{power.strip()} — interpret creatively while keeping the song original and well-structured."
+
+
+def build_generation_prompt(
+    genre: str,
+    topic: str,
+    mood: str,
+    style_index: dict,
+    trend_summary: dict | None = None,
+    power: str | None = None,
+) -> str:
     genre_profile = style_index.get("genres", {}).get(normalize_text(genre))
     target_structure = resolve_structure_for_genre(genre)
 
@@ -45,6 +77,8 @@ def build_generation_prompt(genre: str, topic: str, mood: str, style_index: dict
             ]
         )
 
+    power_text = _resolve_power_line(power)
+
     return f"""Write completely original song lyrics.
 
 User request:
@@ -60,6 +94,9 @@ Safety rules:
 
 Style guidance:
 {profile_text}
+
+Beat power:
+{power_text}
 
 Trend intelligence:
 {trend_text}

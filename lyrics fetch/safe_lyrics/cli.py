@@ -5,11 +5,14 @@ def ask_song_request() -> dict:
     genre = input("What genre do you want? ").strip()
     topic = input("What should the song be about? ").strip()
     mood = input("What mood should it have? ").strip()
+    power = input(
+        "Pick a beat power (Symphonic, Indonesian, Melodic, Brutal, Technical, Progressive, Slamming, Blackened, Downtempo, Christian) [optional]: "
+    ).strip()
 
     if not genre or not topic or not mood:
         raise RuntimeError("Genre, topic, and mood are all required.")
 
-    return {"genre": genre, "topic": topic, "mood": mood}
+    return {"genre": genre, "topic": topic, "mood": mood, "power": power}
 
 
 def main() -> int:
@@ -20,6 +23,7 @@ def main() -> int:
         genre=request["genre"],
         topic=request["topic"],
         mood=request["mood"],
+        power=request["power"],
     )
     print(result["lyrics"])
     print("\nOriginality check: passed")

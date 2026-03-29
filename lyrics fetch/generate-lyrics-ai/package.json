@@ -1,0 +1,16 @@
+{
+  "name": "generate-lyrics-ai",
+  "private": true,
+  "version": "0.0.0",
+  "packageManager": "pnpm@9.0.0",
+  "workspaces": [
+    "web",
+    "worker"
+  ],
+  "scripts": {
+    "dev:web": "pnpm --filter web dev",
+    "dev:worker": "pnpm --filter worker dev",
+    "build": "pnpm --filter web build && pnpm --filter worker build",
+    "lint": "pnpm --filter web lint && pnpm --filter worker lint"
+  }
+}

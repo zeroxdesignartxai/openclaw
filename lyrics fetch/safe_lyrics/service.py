@@ -65,6 +65,7 @@ def _run_agentic_draft(
     mood: str,
     style_index: dict,
     trend_summary: dict,
+    power: str | None,
     provider: str,
     api_key: str,
     oauth_token: str | None,
@@ -73,7 +74,7 @@ def _run_agentic_draft(
 ) -> dict:
     workflow_model = _get_candidate_models(provider, multi_model)[0]
     plan = generate_lyrics(
-        build_planner_prompt(genre, topic, mood, style_index, trend_summary),
+        build_planner_prompt(genre, topic, mood, style_index, trend_summary, power=power),
         provider=provider,
         api_key=api_key,
         model=workflow_model,
@@ -81,7 +82,7 @@ def _run_agentic_draft(
         google_project_id=google_project_id,
     )
     draft = generate_lyrics(
-        build_generation_prompt(genre, topic, mood, style_index, trend_summary) + f"\n\nWriting plan:\n{plan}",
+        build_generation_prompt(genre, topic, mood, style_index, trend_summary, power=power) + f"\n\nWriting plan:\n{plan}",
         provider=provider,
         api_key=api_key,
         model=workflow_model,
@@ -117,6 +118,7 @@ def generate_safe_lyrics(
     genre: str,
     topic: str,
     mood: str,
+    power: str | None = None,
     provider: str = "openai",
     api_key: str | None = None,
     multi_model: bool = False,
@@ -144,6 +146,7 @@ def generate_safe_lyrics(
         mood=mood.strip(),
         style_index=style_index,
         trend_summary=trend_summary,
+        power=power.strip() if power else None,
     )
 
     last_originality = None
@@ -157,6 +160,7 @@ def generate_safe_lyrics(
             mood=mood.strip(),
             style_index=style_index,
             trend_summary=trend_summary,
+            power=power.strip() if power else None,
             provider=resolved_provider,
             api_key=resolved_api_key,
             oauth_token=oauth_token,
@@ -172,6 +176,7 @@ def generate_safe_lyrics(
                 "lyrics": formatted["formatted_lyrics"],
                 "originality": originality,
                 "prompt": prompt,
+                "power": power.strip() if power else "",
                 "provider": resolved_provider,
                 "trend_summary": trend_summary,
                 "selected_model": workflow["workflow_model"],
@@ -204,6 +209,7 @@ def generate_safe_lyrics(
                 "lyrics": formatted["formatted_lyrics"],
                 "originality": originality,
                 "prompt": prompt,
+                "power": power.strip() if power else "",
                 "provider": resolved_provider,
                 "trend_summary": trend_summary,
                 "selected_model": model_name,

@@ -313,6 +313,7 @@ def _render_generate_page(user: dict, *, values: dict[str, str] | None = None, r
     genre = _escape(values.get("genre", "Synthwave"))
     topic = _escape(values.get("topic", "A city drive after a breakup"))
     mood = _escape(values.get("mood", "Cinematic"))
+    power = _escape(values.get("power", "Symphonic"))
     allowance = get_generation_allowance(user)
     trend = get_trend_report(values.get("genre", genre))
     output = _escape(result.get("lyrics", "")) if result else ""
@@ -355,6 +356,22 @@ def _render_generate_page(user: dict, *, values: dict[str, str] | None = None, r
               <input type="text" name="mood" value="{mood}" required>
             </label>
           </div>
+          <label>
+            Beat power
+            <select name="power">
+              <option value="" {"selected" if not power else ""}>Neutral</option>
+              <option value="Symphonic" {"selected" if power == "Symphonic" else ""}>Symphonic — complex, layered systems</option>
+              <option value="Indonesian" {"selected" if power == "Indonesian" else ""}>Indonesian — region-specific configs</option>
+              <option value="Melodic" {"selected" if power == "Melodic" else ""}>Melodic — readable, maintainable fixes</option>
+              <option value="Brutal" {"selected" if power == "Brutal" else ""}>Brutal — aggressive debugging</option>
+              <option value="Technical" {"selected" if power == "Technical" else ""}>Technical — low-level precision</option>
+              <option value="Progressive" {"selected" if power == "Progressive" else ""}>Progressive — forward-looking</option>
+              <option value="Slamming" {"selected" if power == "Slamming" else ""}>Slamming — minimal, fast, direct</option>
+              <option value="Blackened" {"selected" if power == "Blackened" else ""}>Blackened — security-focused</option>
+              <option value="Downtempo" {"selected" if power == "Downtempo" else ""}>Downtempo — cautious, validated</option>
+              <option value="Christian" {"selected" if power == "Christian" else ""}>Christian — safe, ethical</option>
+            </select>
+          </label>
           <label>
             Topic
             <textarea name="topic" required>{topic}</textarea>
@@ -762,6 +779,7 @@ class LyricsRequestHandler(BaseHTTPRequestHandler):
                 genre=str(payload.get("genre", "")),
                 topic=str(payload.get("topic", "")),
                 mood=str(payload.get("mood", "")),
+                power=str(payload.get("power", "")),
                 provider=str(payload.get("provider", "openai")),
                 api_key=str(payload.get("api_key", "")),
                 multi_model=str(payload.get("multi_model", "")).lower() in {"true", "1", "on"},
@@ -772,6 +790,7 @@ class LyricsRequestHandler(BaseHTTPRequestHandler):
                 genre=str(payload.get("genre", "")),
                 topic=str(payload.get("topic", "")),
                 mood=str(payload.get("mood", "")),
+                power=str(payload.get("power", "")),
                 lyrics=result["lyrics"],
                 provider=result["provider"],
                 selected_model=str(result.get("selected_model", "")),
