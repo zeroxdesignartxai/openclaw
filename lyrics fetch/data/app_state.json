@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+      "id": "cbdd8f3c-46ef-44dd-9649-60ca5cddb857",
+      "email": "writer@lyricmaster.ai",
+      "google_id": "google-writer-001",
+      "name": "Avery Lane",
+      "tier": "free",
+      "role": "user",
+      "created_at": "2026-03-29T14:13:12.441012+00:00",
+      "last_login_at": "2026-03-29T14:13:12.441012+00:00"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "chkEYE0eAEvu-FnJ1bXIGDvY7BDqkxjwiizy5xRz1pg",
+      "user_id": "cbdd8f3c-46ef-44dd-9649-60ca5cddb857",
+      "created_at": "2026-03-29T14:13:12.486016+00:00"
+    }
+  ],
+  "generations": [
+    {
+      "id": "d51c7635-0427-4ebf-96c4-ae9608ec0df7",
+      "user_id": "cbdd8f3c-46ef-44dd-9649-60ca5cddb857",
+      "genre": "Synthwave",
+      "topic": "A city drive after a breakup",
+      "mood": "Cinematic",
+      "power": "Symphonic",
+      "lyrics": "Gridline Ghosts\n\n(Verse 1)\nEngine hums a low confession,\nPast the glow of fractured signs.\nEvery street, a new progression,\nLeaving old timelines behind.\nYour phantom hand, a chill beside me,\nOn the polished, vacant seat.\nOnly city pulse to guide me,\nThrough the rhythm of defeat.\n\n(Pre-Chorus)\nThe rearview mirror blurs the past,\nA silent promise, shattered vow.\nThis dizzying speed, it won't outlast\nThe aching question of \"how now?\"\nMy vision blurs, the streetlights gleam,\nA future flickering like a dream.\n\n(Chorus)\nUnderneath the neon arches,\nMy chrome heart beats an empty sound.\nMiles unwind through lonely marches,\nAs your memory spins around.\nNo destination, just the glow,\nOf a city that never sleeps.\nWatching shadows come and go,\nA secret that the asphalt keeps.\n\n(Verse 2)\nFamiliar corner, once our haven,\nNow a hollow, spectral space.\nEach memory etched, a sharp engraven,\nOn the city's stoic face.\nThe distant hum, a fading echo,\nOf laughter shared beneath the stars.\nJust the streetlights, cold and shallow,\nReflecting all my open scars.\n\n(Chorus)\nUnderneath the neon arches,\nMy chrome heart beats an empty sound.\nMiles unwind through lonely marches,\nAs your memory spins around.\nNo destination, just the glow,\nOf a city that never sleeps.\nWatching shadows come and go,\nA secret that the asphalt keeps.\n\n(Bridge)\nI accelerate, the world dissolves to streaks of light,\nTrying to outrun the silence of this endless night.\nMaybe there\u2019s a dawn beyond this digital despair,\nA frequency unseen, a whisper in the air.\nThis engine's pulse, a fragile, hopeful plea,\nTo find the rhythm that belongs to only me.\n\n(Chorus)\nUnderneath the neon arches,\nMy chrome heart beats an empty sound.\nMiles unwind through lonely marches,\nAs your memory spins around.\nNo destination, just the glow,\nOf a city that never sleeps.\nWatching shadows come and go,\nA secret that the asphalt keeps.",
+      "provider": "gemini",
+      "selected_model": "gemini-2.5-flash",
+      "created_at": "2026-03-29T14:14:57.674014+00:00",
+      "originality": {
+        "passed": true,
+        "highest_shared_count": 0,
+        "highest_overlap_ratio": 0.0,
+        "closest_source_id": null,
+        "flagged_phrase": ""
+      }
+    }
+  ],
+  "plagiarism_logs": []
+}

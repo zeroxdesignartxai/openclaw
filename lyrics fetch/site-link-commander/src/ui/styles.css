@@ -1,0 +1,47 @@
+#slc-button {
+  position: fixed;
+  top: 40%;
+  right: 12px;
+  z-index: 2147483647;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #0d6efd, #53b2ff);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", system-ui, sans-serif;
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+#slc-button:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(0,0,0,0.22); }
+#slc-panel {
+  position: fixed;
+  top: 50px;
+  right: 70px;
+  width: 340px;
+  max-height: 80vh;
+  overflow: auto;
+  z-index: 2147483647;
+  background: #0b1021;
+  color: #e7ecff;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+  padding: 16px;
+  font-family: "Inter", system-ui, sans-serif;
+}
+#slc-panel h3 { margin: 0 0 8px; font-size: 16px; letter-spacing: 0.2px; }
+#slc-panel section { margin-bottom: 14px; }
+#slc-panel label { display: block; font-size: 12px; opacity: 0.8; margin-bottom: 4px; }
+#slc-panel input, #slc-panel select, #slc-panel textarea, #slc-panel button {
+  width: 100%; margin-bottom: 8px; padding: 8px 10px; border-radius: 10px; border: 1px solid #1f2a4d;
+  background: #121933; color: #e7ecff; font-size: 13px;
+}
+#slc-panel button.primary { background: linear-gradient(135deg, #7c4dff, #5dd0ff); border: none; color: #0b1021; font-weight: 700; }
+#slc-panel .pill { display: inline-block; padding: 4px 10px; border-radius: 999px; background: #18244a; margin-right: 6px; font-size: 12px; }
+#slc-panel .row { display: flex; gap: 8px; }
+#slc-panel .row > * { flex: 1; }
+#slc-panel .log { font-size: 12px; background: #0d1328; padding: 8px; border-radius: 10px; max-height: 120px; overflow: auto; }

@@ -1,0 +1,28 @@
+0 verbose cli E:\Projects\claw\.tools\node-v22.11.0-win-x64\node.exe E:\Projects\claw\.tools\node-v22.11.0-win-x64\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v22.11.0
+3 silly config load:file:E:\Projects\claw\.tools\node-v22.11.0-win-x64\node_modules\npm\npmrc
+4 silly config load:file:E:\Projects\claw\.home\.pnpm\.npmrc
+5 silly config load:file:E:\Projects\claw\.home\.npmrc
+6 silly config load:file:E:\Projects\claw\.home\.pnpm\etc\npmrc
+7 verbose title npm install pnpm@10.33.0
+8 verbose argv "install" "pnpm@10.33.0" "--prefix" "E:\\Projects\\claw\\.home\\.pnpm"
+9 verbose logfile logs-max:10 dir:E:\Projects\claw\.npm-cache\_logs\2026-03-29T19_39_39_521Z-
+10 verbose logfile E:\Projects\claw\.npm-cache\_logs\2026-03-29T19_39_39_521Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest pnpm@10.33.0
+16 silly packumentCache full:https://registry.npmjs.org/pnpm cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/pnpm 2720ms (cache revalidated)
+18 silly packumentCache full:https://registry.npmjs.org/pnpm set size:5301241 disposed:false
+19 silly placeDep ROOT pnpm@10.33.0 OK for:  want: 10.33.0
+20 silly reify moves {}
+21 silly ADD node_modules/pnpm
+22 verbose cwd E:\Projects\claw
+23 verbose os Windows_NT 10.0.19045
+24 verbose node v22.11.0
+25 verbose npm  v10.9.0
+26 verbose exit 0
+27 info ok

@@ -29,6 +29,52 @@ from safe_lyrics.service import format_generated_lyrics, generate_safe_lyrics, g
 
 SESSION_COOKIE = "lyricmaster_session"
 
+POWER_OPTIONS = [
+    ("", "Neutral — balanced, versatile writing"),
+    ("Symphonic", "complex, layered systems"),
+    ("Indonesian", "region-specific configs"),
+    ("Melodic", "readable, maintainable fixes"),
+    ("Brutal", "aggressive debugging"),
+    ("Technical", "low-level precision"),
+    ("Progressive", "forward-looking"),
+    ("Slamming", "minimal, fast, direct"),
+    ("Blackened", "security-focused"),
+    ("Downtempo", "cautious, validated"),
+    ("Christian", "safe, ethical"),
+    # Spotify-style genre cues
+    ("Pop", "hook-forward, radio-ready"),
+    ("Dance Pop", "four-on-the-floor energy"),
+    ("Indie Pop", "intimate, off-center hooks"),
+    ("Rock", "guitar-led drive"),
+    ("Alt Rock", "angular, moody edge"),
+    ("Indie Rock", "raw texture, storytelling"),
+    ("Metal", "high intensity, dramatic stakes"),
+    ("Punk", "urgent, concise, defiant"),
+    ("Hip-Hop", "rhythmic bars, swagger"),
+    ("Trap", "808 bounce, melodic hooks"),
+    ("Drill", "sliding 808s, stark imagery"),
+    ("R&B", "melodic smoothness"),
+    ("Soul", "warm call-and-response"),
+    ("Afrobeats", "syncopated celebration"),
+    ("Amapiano", "log drum pulse, airy toplines"),
+    ("Reggaeton", "dembow swing, playful refrains"),
+    ("Latin Pop", "bright bilingual hooks"),
+    ("Country", "story-first, concrete places"),
+    ("Folk", "narrative intimacy"),
+    ("Singer-Songwriter", "lyric-forward, confessional"),
+    ("EDM", "build-and-drop tension"),
+    ("House", "steady 4/4 groove"),
+    ("Techno", "minimal, hypnotic"),
+    ("Trance", "uplift, euphoric arcs"),
+    ("Drum and Bass", "breakbeat energy"),
+    ("K-Pop", "section-switch, chantable"),
+    ("J-Pop", "melodic sparkle, crisp diction"),
+    ("Jazz", "swung phrasing, rich chords"),
+    ("Blues", "call-response grit"),
+    ("Classical", "thematic development"),
+    ("Lofi", "understated, cozy calm"),
+]
+
 
 def _escape(value: str) -> str:
     return html.escape(value, quote=True)
@@ -359,17 +405,10 @@ def _render_generate_page(user: dict, *, values: dict[str, str] | None = None, r
           <label>
             Beat power
             <select name="power">
-              <option value="" {"selected" if not power else ""}>Neutral</option>
-              <option value="Symphonic" {"selected" if power == "Symphonic" else ""}>Symphonic — complex, layered systems</option>
-              <option value="Indonesian" {"selected" if power == "Indonesian" else ""}>Indonesian — region-specific configs</option>
-              <option value="Melodic" {"selected" if power == "Melodic" else ""}>Melodic — readable, maintainable fixes</option>
-              <option value="Brutal" {"selected" if power == "Brutal" else ""}>Brutal — aggressive debugging</option>
-              <option value="Technical" {"selected" if power == "Technical" else ""}>Technical — low-level precision</option>
-              <option value="Progressive" {"selected" if power == "Progressive" else ""}>Progressive — forward-looking</option>
-              <option value="Slamming" {"selected" if power == "Slamming" else ""}>Slamming — minimal, fast, direct</option>
-              <option value="Blackened" {"selected" if power == "Blackened" else ""}>Blackened — security-focused</option>
-              <option value="Downtempo" {"selected" if power == "Downtempo" else ""}>Downtempo — cautious, validated</option>
-              <option value="Christian" {"selected" if power == "Christian" else ""}>Christian — safe, ethical</option>
+              {"".join(
+                f'<option value="{_escape(name)}" {"selected" if power == name else ""}>{_escape(name or "Neutral")} — {_escape(desc)}</option>'
+                for name, desc in POWER_OPTIONS
+              )}
             </select>
           </label>
           <label>

@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-[hsl(222.2,84%,4.9%)] text-foreground font-body antialiased;
+  background: radial-gradient(circle at 20% 20%, rgba(124,58,237,0.12), transparent 28%),
+    radial-gradient(circle at 80% 0%, rgba(14,165,233,0.08), transparent 30%),
+    #0b1021;
+}
+
+.glass-panel {
+  @apply bg-white/5 border border-white/10 backdrop-blur-lg rounded-2xl shadow-glass;
+}
+
+input[type='file']::file-selector-button {
+  @apply bg-primary text-white px-3 py-2 rounded-md cursor-pointer border-0;
+}
